@@ -17,7 +17,38 @@ var _ = require('lodash');
 var yaml = require('js-yaml');
 var fs   = require('fs');
 
-// Get document, or throw exception on error
+var defaultPaths = {
+  content: {
+    self: 'content',
+    files: 'files/**',
+    images: 'images/**',
+    pages: 'pages/**/*'
+  },
+  code: {
+    self: 'code',
+    webroot: 'webroot',
+    assets: {
+      self: 'assets',
+      images: 'images',
+    },
+    partials: 'partials/**/*.hbs',
+    layouts: 'layouts',
+    styles: {
+      self: 'styles',
+      src: '**/*.{css,less}',
+      theme: 'theme.less'
+    }
+  }
+};
+
+var paths = defaultPaths;
+// var paths = {
+//   content: {
+//     self: 'contenido',
+//     files: '**/*(.pdf|.zip)'
+
+//   }
+// }
 
 
 module.exports = function(gulp, rootDir, argv, $) {
@@ -177,7 +208,12 @@ module.exports = function(gulp, rootDir, argv, $) {
           .pipe($.if('*.hbs', $.assemble({
             data: assembleData,
             partials: path.join(rootDir,'code/partials/**/*.hbs'),
-            layout: 'default',
+            layoutext: '.hbs',
+            layoutdir: path.join(rootDir,'code/layouts')
+          })))
+          .pipe($.if('*.md', $.assemble({
+            data: assembleData,
+            partials: path.join(rootDir,'code/partials/**/*.md'),
             layoutext: '.hbs',
             layoutdir: path.join(rootDir,'code/layouts')
           })))

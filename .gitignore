@@ -1,6 +1,7 @@
 # Git uses this file to determine which files and directories to ignore
 # https://help.github.com/articles/ignoring-files
-
+.tmp
+insumos
 site
 bower_components
 node_modules

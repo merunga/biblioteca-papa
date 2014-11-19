@@ -1,0 +1,3 @@
+titulo: Fotos
+layout: gallery
+---
