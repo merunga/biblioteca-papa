@@ -1,7 +1,6 @@
 {
-  "name": "seo-arquitectos",
+  "name": "biblioteca-papa",
   "version": "0.0.0",
-  "private": "true",
   "devDependencies": {
     "browser-sync": "^1.3.7",
     "del": "^0.1.3",
