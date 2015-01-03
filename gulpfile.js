@@ -11,4 +11,37 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var argv = require('minimist')(process.argv.slice(2));
 
-require('./code/config/chancholimpio')(gulp, __dirname, argv, $);
+var opt = {
+  paths: {
+    content: {
+      self: 'contenido',
+      files: 'archivos/**',
+      images: 'imagenes/**',
+      pages: 'paginas/**/*.{hbs,md}'
+    },
+    code: {
+      self: 'codigo',
+      webroot: 'webroot',
+      assets: {
+        self: 'assets',
+        images: 'images',
+        fonts: 'fonts',
+        vendor: 'vendor'
+      },
+      partials: 'partials/**/*.hbs',
+      layouts: 'layouts',
+      styles: {
+        self: 'styles',
+        src: '**/*.{css,less}',
+        theme: 'theme.less'
+      },
+      scripts: {
+        self: 'scripts',
+        src: '{plugins,main}.js',
+        bundle: 'bundle.js'
+      }
+    }
+  }
+};
+
+require('./codigo/config/chancholimpio')(gulp, opt, __dirname, argv, $);

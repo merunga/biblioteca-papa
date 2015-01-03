@@ -30,6 +30,8 @@ var defaultPaths = {
     assets: {
       self: 'assets',
       images: 'images',
+      fonts: 'fonts',
+      vendor: 'vendor'
     },
     partials: 'partials/**/*.hbs',
     layouts: 'layouts',
@@ -37,24 +39,28 @@ var defaultPaths = {
       self: 'styles',
       src: '**/*.{css,less}',
       theme: 'theme.less'
+    },
+    scripts: {
+      self: 'scripts',
+      src: '{plugins,main}.js',
+      bundle: 'bundle.js'
     }
   }
 };
 
-var paths = defaultPaths;
-// var paths = {
-//   content: {
-//     self: 'contenido',
-//     files: '**/*(.pdf|.zip)'
-
-//   }
-// }
-
-
-module.exports = function(gulp, rootDir, argv, $) {
+module.exports = function(gulp, opt, rootDir, argv, $) {
   var config = {
     dest: './site'
   }
+
+  var paths = _.extend({},defaultPaths,opt.paths);;
+  // var paths = {
+  //   content: {
+  //     self: 'contenido',
+  //     files: '**/*(.pdf|.zip)'
+
+  //   }
+  // }
 
   // Settings
   var RELEASE_URL = '<URL>';
@@ -114,25 +120,39 @@ module.exports = function(gulp, rootDir, argv, $) {
   gulp.task('vendor', function () {
     return merge(
       gulp.src(path.join(rootDir,'bower_components/jquery/dist/**'))
-        .pipe(gulp.dest(DEST + '/assets/vendor/jquery-' + pkgs.jquery)),
+        .pipe(gulp.dest(path.join(
+          DEST,
+          paths.code.assets.self,
+          paths.code.assets.vendor,
+          'jquery-' + pkgs.jquery
+        ))),
       gulp.src(path.join(rootDir,'bower_components/modernizr/modernizr.js'))
         .pipe($.rename('modernizr.min.js'))
         .pipe($.uglify())
-        .pipe(gulp.dest(DEST + '/assets/vendor/modernizr-' + pkgs.modernizr))
+        .pipe(gulp.dest(path.join(
+          DEST,
+          paths.code.assets.self,
+          paths.code.assets.vendor,
+          'modernizr-' + pkgs.modernizr
+        )))
     );
   });
 
   // Static files
   gulp.task('files', function () {
-    src.files = 'content/files/**';
+    src.files = path.join(paths.content.self, paths.content.files);
     return gulp.src(src.files)
-      .pipe(gulp.dest(DEST + '/files'))
-      .pipe($.if(watch, reload({stream: true})));
+      .pipe(gulp.dest(path.join(
+        DEST,
+        '/',
+        paths.content.files
+      )))
+      .pipe($.if(watch, reload({stream: true})))
   });
 
   // Static files
   gulp.task('webroot', function () {
-    src.webroot = 'code/webroot/**';
+    src.webroot = path.join(paths.code.self, paths.code.webroot, '**.*');
     return gulp.src(src.webroot)
       .pipe(gulp.dest(DEST))
       .pipe($.if(watch, reload({stream: true})));
@@ -140,24 +160,38 @@ module.exports = function(gulp, rootDir, argv, $) {
 
   // Images
   gulp.task('assets-images', function () {
-    src.images = path.join(rootDir,'code/assets/images/**');
+    src.images = path.join(
+      rootDir,
+      paths.code.self,
+      paths.code.assets.self,
+      paths.code.assets.images
+    );
+
     return gulp.src(src.images)
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
         interlaced: true
       }))))
-      .pipe(gulp.dest(DEST + '/assets/images'))
+      .pipe(gulp.dest(path.join(
+        DEST,
+        paths.code.assets.self,
+        paths.code.assets.images
+      )))
       .pipe($.if(watch, reload({stream: true})));
   });
 
   gulp.task('content-images', function () {
-    src.images = path.join(rootDir,'content/images/**');
+    src.images = path.join(
+      rootDir,
+      paths.content.self,
+      paths.content.images
+    );
     return gulp.src(src.images)
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
         interlaced: true
       }))))
-      .pipe(gulp.dest(DEST + '/images'));
+      .pipe(gulp.dest(path.join(DEST, paths.content.images)));
       //.pipe($.if(watch, reload({stream: true})));
   });
 
@@ -166,7 +200,11 @@ module.exports = function(gulp, rootDir, argv, $) {
   // Fonts
   gulp.task('fonts', function () {
     return gulp.src(path.join(rootDir,'node_modules/bootstrap/fonts/**'))
-      .pipe(gulp.dest(DEST + '/assets/fonts'));
+      .pipe(gulp.dest(path.join(
+        DEST,
+        paths.code.assets.self,
+        paths.code.assets.fonts
+      )));
   });
 
   // HTML pages
@@ -195,34 +233,68 @@ module.exports = function(gulp, rootDir, argv, $) {
 
   gulp.task('pages', function () {
     var glob = require('glob');
-    glob(path.join(rootDir,'content/pages/**/*'), function(err, files) {
+    glob(path.join(
+        rootDir,
+        paths.content.self,
+        paths.content.pages
+      ), function(err, files) {
       files.forEach(function(filePath) {
-        var replacedPath = filePath.replace('content/pages/', '');
+        var replacedPath = filePath.replace(path.join(
+          paths.content.self,
+          paths.content.pages
+        ).replace('**/*'), '');
         var buildPath = '';
         if ( /\//.test(replacedPath) ) {
           buildPath = replacedPath.substr(0, replacedPath.lastIndexOf('/'));
           buildPath = buildPath.replace(rootDir,'');
         }
+        //
+        // buildPath = buildPath.replace(
+        //   path.join(
+        //     paths.content.self,
+        //     paths.content.pages
+        //   ).replace('**.*'),
+        //   ''
+        // );
+
+        var partialsPath = path.join(
+          rootDir,
+          paths.code.self,
+          paths.code.partials
+        );
+
+        var layoutDir = path.join(
+          rootDir,
+          paths.code.self,
+          paths.code.layouts
+        );
 
         var stream = gulp.src(filePath)
           .pipe($.if('*.hbs', $.assemble({
             data: assembleData,
-            partials: path.join(rootDir,'code/partials/**/*.hbs'),
+            partials: partialsPath,
             layoutext: '.hbs',
-            layoutdir: path.join(rootDir,'code/layouts')
+            layoutdir: layoutDir
           })))
           .pipe($.if('*.md', $.assemble({
             data: assembleData,
-            partials: path.join(rootDir,'code/partials/**/*.md'),
-            layoutext: '.hbs',
-            layoutdir: path.join(rootDir,'code/layouts')
+            partials: partialsPath,
+            layoutext: '.md',
+            layoutdir: layoutDir
           })))
           .pipe($.if(isntFolder, $.if(RELEASE, $.htmlmin({
             removeComments: true,
             collapseWhitespace: true,
             minifyJS: true, minifyCSS: true
           }))))
-          .pipe(gulp.dest(DEST + '/' + buildPath))
+          .pipe(gulp.dest(path.join(
+            DEST,
+            '/',
+            buildPath.replace(path.join(
+              paths.content.self,
+              paths.content.pages
+            ).replace('/**/*.{hbs,md}',''),'')
+          )))
           .pipe($.if(watch, reload({stream: true})));
 
           stream.on('error', function(err) {console.log(err)});
@@ -232,28 +304,50 @@ module.exports = function(gulp, rootDir, argv, $) {
 
   // CSS style sheets
   gulp.task('styles', function () {
-    src.styles = path.join(rootDir,'code/styles/**/*.{css,less}');
-    return gulp.src(path.join(rootDir,'code/styles/theme.less'))
-      .pipe($.if(!RELEASE, $.sourcemaps.init()))
+    src.styles = path.join(
+      rootDir,
+      paths.code.self,
+      paths.code.styles.self,
+      paths.code.styles.src
+    );
+    return gulp.src(path.join(
+      rootDir,
+      paths.code.self,
+      paths.code.styles.self,
+      paths.code.styles.theme
+    )).pipe($.if(!RELEASE, $.sourcemaps.init()))
       .pipe($.less())
       .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
       .pipe($.csscomb())
       .pipe(RELEASE ? $.cssmin() : $.util.noop())
       .pipe($.rename('style.css'))
       .pipe($.if(!RELEASE, $.sourcemaps.write()))
-      .pipe(gulp.dest(DEST + '/assets/styles'))
+      .pipe(gulp.dest(path.join(
+        DEST,
+        paths.code.assets.self,
+        paths.code.styles.self
+      )))
       .pipe($.if(watch, reload({stream: true})));
   });
 
   // JavaScript
   gulp.task('scripts', function () {
-    src.scripts = [path.join(rootDir,'code/scripts/plugins.js'), path.join(rootDir,'code/scripts/main.js')];
+    src.scripts = [path.join(
+      rootDir,
+      paths.code.self,
+      paths.code.scripts.self,
+      paths.code.scripts.src
+    )];
     return gulp.src(src.scripts)
       .pipe($.if(!RELEASE, $.sourcemaps.init()))
-      .pipe($.concat('bundle.js'))
+      .pipe($.concat(paths.code.scripts.bundle))
       .pipe($.if(RELEASE, $.uglify()))
       .pipe($.if(!RELEASE, $.sourcemaps.write()))
-      .pipe(gulp.dest(DEST + '/assets/scripts'))
+      .pipe(gulp.dest(path.join(
+        DEST,
+        paths.code.assets.self,
+        paths.code.scripts.self
+      )))
       .pipe($.if(watch, reload({stream: true})));
   });
 
