@@ -16,7 +16,7 @@ var opt = {
     content: {
       self: 'contenido',
       files: 'archivos/**',
-      images: 'imagenes/**',
+      images: '**/*.{jpg,png,svg}',
       pages: 'paginas/**/*.{hbs,md}'
     },
     code: {
@@ -30,6 +30,7 @@ var opt = {
       },
       partials: 'partials/**/*.hbs',
       layouts: 'layouts',
+      helpers: 'helpers/**/*.js',
       styles: {
         self: 'styles',
         src: '**/*.{css,less}',

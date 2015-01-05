@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<h1>{{page.nombre}}</h1>
+
+<img src="fotos/{{slugify page.nombre}}.jpg">
+
+<h2>Ingredientes</h2>
+<ul>
+{{#each page.ingredientes}}
+  <li>{{this}}</li>
+{{/each}}
+</ul>
+
+<h2>Preparación</h2>
+<ul>
+{{#each page.preparacion}}
+  <li>{{this}}</li>
+{{/each}}
+</ul>
+
+{{#if page.notas}}
+  <h2>Notas</h2>
+  <ul>
+  {{#each page.notas}}
+    <li>{{this}}</li>
+  {{/each}}
+  </ul>
+{{/if}}
+
+<h2>Lugar</h2>
+{{page.lugar}}

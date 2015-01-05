@@ -21,7 +21,7 @@ var defaultPaths = {
   content: {
     self: 'content',
     files: 'files/**',
-    images: 'images/**',
+    images: '**/*.{jpg,png,svg}',
     pages: 'pages/**/*'
   },
   code: {
@@ -35,6 +35,7 @@ var defaultPaths = {
     },
     partials: 'partials/**/*.hbs',
     layouts: 'layouts',
+    helpers: 'helpers/**/*.js',
     styles: {
       self: 'styles',
       src: '**/*.{css,less}',
@@ -186,12 +187,13 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       paths.content.self,
       paths.content.images
     );
+    console.log(src.images)
     return gulp.src(src.images)
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
         interlaced: true
       }))))
-      .pipe(gulp.dest(path.join(DEST, paths.content.images)));
+      .pipe(gulp.dest(DEST));
       //.pipe($.if(watch, reload({stream: true})));
   });
 
@@ -269,19 +271,21 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           paths.code.layouts
         );
 
+        var assembleOpt = {
+          data: assembleData,
+          partials: partialsPath,
+          layoutext: '.hbs',
+          layoutdir: layoutDir,
+          helpers: [path.join(
+            rootDir,
+            paths.code.self,
+            paths.code.helpers
+          )]
+        };
+
         var stream = gulp.src(filePath)
-          .pipe($.if('*.hbs', $.assemble({
-            data: assembleData,
-            partials: partialsPath,
-            layoutext: '.hbs',
-            layoutdir: layoutDir
-          })))
-          .pipe($.if('*.md', $.assemble({
-            data: assembleData,
-            partials: partialsPath,
-            layoutext: '.md',
-            layoutdir: layoutDir
-          })))
+          .pipe($.if('*.hbs', $.assemble( assembleOpt )))
+          .pipe($.if('*.md',  $.assemble( assembleOpt )))
           .pipe($.if(isntFolder, $.if(RELEASE, $.htmlmin({
             removeComments: true,
             collapseWhitespace: true,
