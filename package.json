@@ -33,5 +33,8 @@
     "minimist": "^1.1.0",
     "psi": "^0.1.2",
     "run-sequence": "^0.3.7"
+  },
+  "dependencies": {
+    "assemble-markdown-pages": "^0.1.1"
   }
 }

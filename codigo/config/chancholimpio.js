@@ -21,7 +21,7 @@ var defaultPaths = {
   content: {
     self: 'content',
     files: 'files/**',
-    images: '**/*.{jpg,png,svg}',
+    images: 'images/*.{jpg,png,svg}',
     pages: 'pages/**/*'
   },
   code: {
@@ -187,7 +187,6 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       paths.content.self,
       paths.content.images
     );
-    console.log(src.images)
     return gulp.src(src.images)
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
@@ -235,11 +234,12 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
   gulp.task('pages', function () {
     var glob = require('glob');
-    glob(path.join(
-        rootDir,
-        paths.content.self,
-        paths.content.pages
-      ), function(err, files) {
+    src.pages = path.join(
+      rootDir,
+      paths.content.self,
+      paths.content.pages
+    );
+    glob(src.pages, function(err, files) {
       files.forEach(function(filePath) {
         var replacedPath = filePath.replace(path.join(
           paths.content.self,
@@ -284,8 +284,15 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         };
 
         var stream = gulp.src(filePath)
-          .pipe($.if('*.hbs', $.assemble( assembleOpt )))
-          .pipe($.if('*.md',  $.assemble( assembleOpt )))
+          .pipe($.assemble( assembleOpt ))
+          // .pipe($.if('*.hbs', $.assemble( assembleOpt )))
+          // .pipe($.if('*.md',  $.assemble( _.extend({
+          //   plugins: ['assemble-markdown-pages'],
+          //   markdownPages: {
+          //     src: filePath,
+          //     dest: ''
+          //   }
+          // }, assembleOpt) )))
           .pipe($.if(isntFolder, $.if(RELEASE, $.htmlmin({
             removeComments: true,
             collapseWhitespace: true,

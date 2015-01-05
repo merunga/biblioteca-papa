@@ -1,3 +1,0 @@
-titulo: Historia
-layout: timeline
----

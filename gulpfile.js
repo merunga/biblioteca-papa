@@ -15,9 +15,9 @@ var opt = {
   paths: {
     content: {
       self: 'contenido',
-      files: 'archivos/**',
+      files: 'descargas/**',
       images: '**/*.{jpg,png,svg}',
-      pages: 'paginas/**/*.{hbs,md}'
+      pages: '**/*.{hbs,md}'
     },
     code: {
       self: 'codigo',
