@@ -1,5 +1,6 @@
 ---
 titulo: Suwaman llullakuq papa
+tituloEs: La papa que miente al ladrón
 tipo: Willakuy
 layout: cuento
 ---

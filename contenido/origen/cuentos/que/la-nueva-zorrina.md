@@ -1,5 +1,6 @@
 ---
 titulo: Añas Qhachun
+tituloEs: La Nueva Zorrina
 tipo: Willakuy
 layout: cuento
 ---

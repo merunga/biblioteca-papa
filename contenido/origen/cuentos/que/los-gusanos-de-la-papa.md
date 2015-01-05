@@ -1,5 +1,6 @@
 ---
 titulo: Papa kurukunamanta
+tituloEs: Los gusanos de la papa
 tipo: Imayna rikhurimusqanmta
 layout: cuento
 ---

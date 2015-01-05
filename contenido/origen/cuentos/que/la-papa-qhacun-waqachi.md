@@ -1,5 +1,6 @@
 ---
 titulo: QHACHUN WAQACHIK PAPACHAMANTA
+tituloEs: La papa Qhachun Waqachik
 tipo: Willakuy
 layout: cuento
 ---

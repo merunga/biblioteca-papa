@@ -1,5 +1,6 @@
 ---
 titulo: Papa suwa atuqkunamanta
+tituloEs: Los zorros ladrones de papas
 tipo: Willakuy
 layout: cuento
 ---

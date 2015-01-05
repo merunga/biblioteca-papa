@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<h1>{{page.titulo}}</h1>
-<h2>({{page.tipo}})</h2>
+<h1>{{page.titulo}} <small>({{page.tipo}})</small></h1>
+
+{{#if page.tituloEs}}
+  <img src="../imagenes/{{slugify page.tituloEs}}.jpg">
+{{else}}
+  <img src="../imagenes/{{slugify page.titulo}}.jpg">
+{{/if}}
 
 {{> body }}

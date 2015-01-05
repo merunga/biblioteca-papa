@@ -1,5 +1,6 @@
 ---
 titulo: TAMPURUQUTUWAN PUKLLAY
+tituloEs: El juego del Tambarukutu
 tipo: Willakuy
 layout: cuento
 ---

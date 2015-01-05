@@ -116,4 +116,6 @@ fotos:
   - codigo: 038cc
     nombre: Preparación de la papa para la comida
     lugar: Apurímac
+
+layout: default
 ---

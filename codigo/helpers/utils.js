@@ -1,4 +1,5 @@
 var gutil = require('gulp-util');
+var _ = require('lodash');
 
 module.exports.log = function(content) {
   gutil.log(content);
@@ -15,6 +16,7 @@ module.exports.slugify = function(str) {
     .replace(/[úùüû]/, 'u')
     .replace(/[ýÿ]/, 'y')
     .replace(/[ç]/, 'c')
+    .replace(/[ñ]/, 'n')
     // .replace(/['"]/, '')
     // .replace(/[^a-zA-Z0-9-]/, '')
     .replace(/\s+/, '-')
@@ -22,7 +24,7 @@ module.exports.slugify = function(str) {
     .replace(/(_)$/, '')
     .replace(/^(_)/, '')
     .replace(/\s+/g, '-')           // Replace spaces with -
-    .replace(/[^\w\-\ñ]+/g, '')     // Remove all non-word chars
+    .replace(/[^\w\-\']+/g, '')     // Remove all non-word chars
     .replace(/\-\-+/g, '-')         // Replace multiple - with single -
     .replace(/^-+/, '')             // Trim - from start of text
     .replace(/-+$/, '');            // Trim - from end of text
@@ -34,4 +36,20 @@ module.exports.relative = function(from, to) {
   var relativePath = path.relative(path.resolve(from), path.resolve(to));
 
   return relativePath.replace(/\\/g, '/');
+};
+
+module.exports.isObject = function (it, options) {
+  if (_.isObject(it)) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+};
+
+module.exports.firstKey = function (it) {
+  if (_.keys(it).length > 0) {
+    return _.keys(it)[0];
+  } else {
+    return undefined;
+  }
 };

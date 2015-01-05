@@ -9,14 +9,36 @@ layout: default
 <h2>Ingredientes</h2>
 <ul>
 {{#each page.ingredientes}}
-  <li>{{this}}</li>
+  <li>
+    {{#isObject this}}
+      <h3>{{firstKey this}}</h3>
+      <ul>
+        {{#each this}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul> 
+    {{else}}
+      {{this}}
+    {{/isObject}}
+  </li>
 {{/each}}
 </ul>
 
 <h2>Preparación</h2>
 <ul>
 {{#each page.preparacion}}
-  <li>{{this}}</li>
+  <li>
+    {{#isObject this}}
+      <h3>{{firstKey this}}</h3>
+      <ul>
+        {{#each this}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul> 
+    {{else}}
+      {{this}}
+    {{/isObject}}
+  </li>
 {{/each}}
 </ul>
 
@@ -31,3 +53,6 @@ layout: default
 
 <h2>Lugar</h2>
 {{page.lugar}}
+
+
+{{> body}}
