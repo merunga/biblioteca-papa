@@ -1,3 +1,4 @@
+---
 titulo: Fotos
 layout: gallery
 ---

@@ -16,6 +16,9 @@ var path = require('path');
 var _ = require('lodash');
 var yaml = require('js-yaml');
 var fs   = require('fs');
+var fm = require('front-matter');
+var glob = require('glob');
+var async = require('async');
 
 var defaultPaths = {
   content: {
@@ -43,7 +46,7 @@ var defaultPaths = {
     },
     scripts: {
       self: 'scripts',
-      src: '{plugins,main}.js',
+      src: '{plugins,main,*}.js',
       bundle: 'bundle.js'
     }
   }
@@ -233,84 +236,146 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
   });
 
   gulp.task('pages', function () {
-    var glob = require('glob');
+    
     src.pages = path.join(
       rootDir,
       paths.content.self,
       paths.content.pages
     );
+
     glob(src.pages, function(err, files) {
-      files.forEach(function(filePath) {
-        var replacedPath = filePath.replace(path.join(
-          paths.content.self,
-          paths.content.pages
-        ).replace('**/*'), '');
-        var buildPath = '';
-        if ( /\//.test(replacedPath) ) {
-          buildPath = replacedPath.substr(0, replacedPath.lastIndexOf('/'));
-          buildPath = buildPath.replace(rootDir,'');
+      var menu = {};
+      async.each(files, function(filePath, cb) {
+        fs.readFile(filePath, 'utf8', function(err, data){
+            if (err) throw err
+
+            var relPath = filePath.replace(path.join(rootDir, paths.content.self, '/'), '');
+
+            var absolutePath = path.join('/',relPath.replace(/(.*)\.[^.]+$/, "$1.html"));
+
+            var categories = path.dirname(relPath).split(path.sep);
+            var contentKey = path.basename(relPath).replace(/(.*)\.[^.]+$/, "$1");
+
+            var it = menu;
+            for(var i in categories) {
+              var cat = categories[i];
+              if(!it[cat]) {
+                it[cat] = {
+                  title: cat
+                };
+              }
+              it = it[cat];
+            }
+            
+            var page = it[contentKey] = _.extend({
+              isPage: true,
+              absolutePath: absolutePath
+            }, _.omit( fm(data).attributes, 'layout' ));
+
+            if(!page.title) {
+              page.title = page.titulo || page.nombre || contentKey;
+            }
+
+            cb();
+          });
+      }, function(err) {
+        if (err) throw err
+
+        function thisfun(submenu) {
+          if(_.isObject(submenu)) {
+            var keys = _.keys(submenu);
+            if(_.isEmpty(_.difference(keys, ['title','index']))) {
+              _.extend(submenu, submenu['index']);
+              delete submenu['index'];
+            } else {
+              if(_.contains(keys, 'index')) {
+                submenu.title = submenu.index.title;
+              }
+              _.each(keys, function(key, index){
+                thisfun(submenu[key])
+              });
+            }            
+          }         
         }
-        //
-        // buildPath = buildPath.replace(
-        //   path.join(
-        //     paths.content.self,
-        //     paths.content.pages
-        //   ).replace('**.*'),
-        //   ''
-        // );
 
-        var partialsPath = path.join(
-          rootDir,
-          paths.code.self,
-          paths.code.partials
-        );
+        thisfun(menu);
 
-        var layoutDir = path.join(
-          rootDir,
-          paths.code.self,
-          paths.code.layouts
-        );
-
-        var assembleOpt = {
-          data: assembleData,
-          partials: partialsPath,
-          layoutext: '.hbs',
-          layoutdir: layoutDir,
-          helpers: [path.join(
-            rootDir,
-            paths.code.self,
-            paths.code.helpers
-          )]
-        };
-
-        var stream = gulp.src(filePath)
-          .pipe($.assemble( assembleOpt ))
-          // .pipe($.if('*.hbs', $.assemble( assembleOpt )))
-          // .pipe($.if('*.md',  $.assemble( _.extend({
-          //   plugins: ['assemble-markdown-pages'],
-          //   markdownPages: {
-          //     src: filePath,
-          //     dest: ''
-          //   }
-          // }, assembleOpt) )))
-          .pipe($.if(isntFolder, $.if(RELEASE, $.htmlmin({
-            removeComments: true,
-            collapseWhitespace: true,
-            minifyJS: true, minifyCSS: true
-          }))))
-          .pipe(gulp.dest(path.join(
-            DEST,
-            '/',
-            buildPath.replace(path.join(
+        glob(src.pages, function(err, files) {
+          files.forEach(function(filePath) {
+            var replacedPath = filePath.replace(path.join(
               paths.content.self,
               paths.content.pages
-            ).replace('/**/*.{hbs,md}',''),'')
-          )))
-          .pipe($.if(watch, reload({stream: true})));
+            ).replace('**/*'), '');
+            var buildPath = '';
+            if ( /\//.test(replacedPath) ) {
+              buildPath = replacedPath.substr(0, replacedPath.lastIndexOf('/'));
+              buildPath = buildPath.replace(rootDir,'');
+            }
+            //
+            // buildPath = buildPath.replace(
+            //   path.join(
+            //     paths.content.self,
+            //     paths.content.pages
+            //   ).replace('**.*'),
+            //   ''
+            // );
 
-          stream.on('error', function(err) {console.log(err)});
+            var partialsPath = path.join(
+              rootDir,
+              paths.code.self,
+              paths.code.partials
+            );
+
+            var layoutDir = path.join(
+              rootDir,
+              paths.code.self,
+              paths.code.layouts
+            );
+
+            var assembleOpt = {
+              data: _.extend({menu: menu}, assembleData),
+              partials: partialsPath,
+              layoutext: '.hbs',
+              layoutdir: layoutDir,
+              helpers: [path.join(
+                rootDir,
+                paths.code.self,
+                paths.code.helpers
+              )]
+            };
+
+            var stream = gulp.src(filePath)
+              .pipe($.assemble( assembleOpt ))
+              // .pipe($.if('*.hbs', $.assemble( assembleOpt )))
+              // .pipe($.if('*.md',  $.assemble( _.extend({
+              //   plugins: ['assemble-markdown-pages'],
+              //   markdownPages: {
+              //     src: filePath,
+              //     dest: ''
+              //   }
+              // }, assembleOpt) )))
+              .pipe($.if(isntFolder, $.if(RELEASE, $.htmlmin({
+                removeComments: true,
+                collapseWhitespace: true,
+                minifyJS: true, minifyCSS: true
+              }))))
+              .pipe(gulp.dest(path.join(
+                DEST,
+                '/',
+                buildPath.replace(path.join(
+                  paths.content.self,
+                  paths.content.pages
+                ).replace('/**/*.{hbs,md}',''),'')
+              )))
+              .pipe($.if(watch, reload({stream: true})));
+
+              stream.on('error', function(err) {console.log(err)});
+          });
+        });
       });
     });
+
+
   })
 
   // CSS style sheets

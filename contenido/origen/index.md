@@ -1,3 +1,4 @@
+---
 titulo: Origen
 contenidos:
   - cuentos:
@@ -23,5 +24,4 @@ contenidos:
   - materiales:
     -
     -
-
 ---

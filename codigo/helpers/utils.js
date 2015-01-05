@@ -27,3 +27,11 @@ module.exports.slugify = function(str) {
     .replace(/^-+/, '')             // Trim - from start of text
     .replace(/-+$/, '');            // Trim - from end of text
 };
+
+var path = require('path');
+
+module.exports.relative = function(from, to) {
+  var relativePath = path.relative(path.resolve(from), path.resolve(to));
+
+  return relativePath.replace(/\\/g, '/');
+};

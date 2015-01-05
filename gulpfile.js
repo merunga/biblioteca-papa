@@ -38,7 +38,7 @@ var opt = {
       },
       scripts: {
         self: 'scripts',
-        src: '{plugins,main}.js',
+        src: '{plugins,main,*}.js',
         bundle: 'bundle.js'
       }
     }
