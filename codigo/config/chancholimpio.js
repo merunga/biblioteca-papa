@@ -298,7 +298,46 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           }         
         }
 
+        function sortKeys(orig, sorted) {
+          if(!orig || typeof orig != 'object') {
+            sorted = orig;
+            return;
+          } 
+
+          var keys = Object.keys(orig);
+
+          var i, len = keys.length;
+
+          keys = _.sortBy(keys, function(key) {
+            var page = orig[key];
+            if(page) {
+              if(page.isPage) {
+                return page.indice
+              } else {
+                return '0'+(page.title || page.titulo || page.nombre);
+              }
+            } else {
+              return '0'+key;
+            }
+          });
+
+          for (i = 0; i < len; i++) {
+            var k = keys[i];
+            if(typeof orig[k] != 'object') {
+              sorted[k] = orig[k];
+            } else {
+              if(!sorted[k]) {
+                sorted[k] = {};
+              }
+              sortKeys(orig[k],sorted[k]);
+            }
+          }
+        }
+
         thisfun(menu);
+
+        var sortedMenu = {};
+        sortKeys(menu,sortedMenu);
 
         glob(src.pages, function(err, files) {
           files.forEach(function(filePath) {
@@ -333,7 +372,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
             );
 
             var assembleOpt = {
-              data: _.extend({menu: menu}, assembleData),
+              data: _.extend({menu: sortedMenu}, assembleData),
               partials: partialsPath,
               layoutext: '.hbs',
               layoutdir: layoutDir,

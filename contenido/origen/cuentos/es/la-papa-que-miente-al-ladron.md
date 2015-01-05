@@ -2,6 +2,7 @@
 titulo: La papa que miente al ladrón
 tipo: Cuento
 layout: cuento
+indice: 4
 ---
 
 {{#markdown}}

@@ -2,6 +2,7 @@
 titulo: El juego del Tambarukutu
 tipo: Costumbre
 layout: cuento
+indice: 6
 ---
 
 {{#markdown}}

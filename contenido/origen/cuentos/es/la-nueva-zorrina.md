@@ -2,6 +2,7 @@
 titulo: La Nueva Zorrina
 tipo: Cuento
 layout: cuento
+indice: 2
 ---
 
 {{#markdown}}
