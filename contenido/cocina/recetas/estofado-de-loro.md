@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Estofado De Loro o Haucha
 
+indice: 5
+
 ingredientes:
   - Aceite
   - Ajo

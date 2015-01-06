@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Caldo De Cordero
 
+indice: 1
+
 ingredientes:
   - Ajo
   - Asnapa

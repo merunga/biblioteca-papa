@@ -235,7 +235,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       .pipe($.if(watch, reload({stream: true})));
   });
 
-  gulp.task('pages', function () {
+  gulp.task('pages', function (cb) {
     
     src.pages = path.join(
       rootDir,
@@ -290,9 +290,12 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
             } else {
               if(_.contains(keys, 'index')) {
                 submenu.title = submenu.index.title;
+                if(submenu.index.indice) {
+                  submenu.indice = submenu.index.indice;
+                }
               }
-              _.each(keys, function(key, index){
-                thisfun(submenu[key])
+              _.each(keys, function(key, index) {
+                thisfun(submenu[key]);
               });
             }            
           }         
@@ -311,7 +314,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           keys = _.sortBy(keys, function(key) {
             var page = orig[key];
             if(page) {
-              if(page.isPage) {
+              if(page.hasOwnProperty('indice')) {
                 return page.indice
               } else {
                 return '0'+(page.title || page.titulo || page.nombre);

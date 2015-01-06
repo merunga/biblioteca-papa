@@ -2,7 +2,7 @@
 titulo: Los zorros ladrones de papas
 tipo: Cuento
 layout: cuento
-indice: 1
+indice: 4
 ---
 
 {{#markdown}}

@@ -1,8 +1,8 @@
 ---
-titulo: La Nueva Zorrina
+titulo: La Nuera Zorrina
 tipo: Cuento
 layout: cuento
-indice: 2
+indice: 1
 ---
 
 {{#markdown}}

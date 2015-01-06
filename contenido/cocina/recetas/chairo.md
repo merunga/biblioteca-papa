@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Chairo
 
+indice: 3
+
 ingredientes:
   - Aceite
   - Ajo

@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Causa De Papa
 
+indice: 2
+
 ingredientes:
   - Aceituna
   - Atún o pollo

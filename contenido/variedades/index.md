@@ -3,6 +3,8 @@ layout: default
 
 title: Variedades
 
+indice: 2
+
 variedades:
   - 
     codigo: 1

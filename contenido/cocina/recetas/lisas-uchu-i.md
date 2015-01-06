@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Lisas Uchu I
 
+indice: 7
+
 ingredientes:
   - Aceite
   - Ajo

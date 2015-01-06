@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Chuño Con Huikuro
 
+indice: 16
+
 ingredientes:
   - Huikuro (gusano)
   - Chuño

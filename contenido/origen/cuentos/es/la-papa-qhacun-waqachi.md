@@ -2,7 +2,7 @@
 titulo: La papa Qhachun Waqachik
 tipo: Cuento
 layout: cuento
-indice: 3
+indice: 2
 ---
 
 {{#markdown}}

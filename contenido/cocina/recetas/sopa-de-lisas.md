@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Sopa De Lisas
 
+indice: 12
+
 ingredientes:
   - Aceite
   - Ajo

@@ -3,6 +3,8 @@ layout: receta
 
 nombre: T'impu
 
+indice: 13
+
 ingredientes:
   - Ajo
   - Camote

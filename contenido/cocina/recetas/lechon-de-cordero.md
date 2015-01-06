@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Lechón De Cordero
 
+indice: 6
+
 ingredientes:
   - Papa
   - Un cordero

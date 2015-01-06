@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Torreja De Papa
 
+indice: 14
+
 ingredientes:
   - Papa con características harinosas
   - Harina

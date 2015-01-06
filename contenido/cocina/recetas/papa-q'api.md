@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Papa Q'api
 
+indice: 10
+
 ingredientes:
   - Aceite
   - Ajo

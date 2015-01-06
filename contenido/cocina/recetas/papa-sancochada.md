@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Papa Sancochada
 
+indice: 11
+
 ingredientes:
   - Ocopa picante. 
  

@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Torta De Papa
 
+indice: 15
+
 ingredientes:
   - Aceite
   - Azúcar

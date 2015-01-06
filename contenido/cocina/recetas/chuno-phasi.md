@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Chuño Phasi
 
+indice: 4
+
 ingredientes:
   - Chuño
   - Ensalada de verduras

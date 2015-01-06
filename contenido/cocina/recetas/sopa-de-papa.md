@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Sopa De Papa
 
+indice: 19
+
 ingredientes:
   - Papa (huairo o amarrilla)
   - Huevo

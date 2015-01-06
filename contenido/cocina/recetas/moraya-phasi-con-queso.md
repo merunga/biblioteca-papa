@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Moraya Phasi Con Queso
 
+indice: 9
+
 ingredientes:
   - Moraya
   - Queso

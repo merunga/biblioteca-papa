@@ -2,7 +2,7 @@
 titulo: Los gusanos de la papa
 tipo: Mito de origen
 layout: cuento
-indice: 5
+indice: 3
 ---
 
 {{#markdown}}

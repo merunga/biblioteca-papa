@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Papa Con Trucha
 
+indice: 17
+
 ingredientes:
   - Papa
   - Aceite

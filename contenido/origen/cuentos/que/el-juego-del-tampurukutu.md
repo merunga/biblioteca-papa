@@ -1,8 +1,9 @@
 ---
-titulo: TAMPURUQUTUWAN PUKLLAY
+titulo: Tampuruqutuwan Pukllay
 tituloEs: El juego del Tambarukutu
 tipo: Willakuy
 layout: cuento
+indice: 6
 ---
 
 {{#markdown}}

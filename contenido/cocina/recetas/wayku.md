@@ -3,6 +3,8 @@ layout: receta
 
 nombre: Wayku = Fiambre
 
+indice: 18
+
 ingredientes:
   - Papa
   - Chuño
