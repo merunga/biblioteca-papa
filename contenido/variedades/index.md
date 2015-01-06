@@ -6,8 +6,7 @@ title: Variedades
 indice: 2
 
 variedades:
-  - 
-    codigo: 1
+  - codigo: 1
     nombre: Allqa Compis
     nombreAlternativo: Alqa Imilla
     significadoNombre: Papa de 2 colores rosado y blanco
@@ -18,8 +17,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 2
+    
+  - codigo: 2
     nombre: Azul Ñawi Pasña
     nombreAlternativo: Yana Chusña
     significadoNombre: Muchacha con ojos azules
@@ -30,8 +29,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 3
+    
+  - codigo: 3
     nombre: Compis
     nombreAlternativo: Puka Imilla
     significadoNombre: (No definido)
@@ -42,8 +41,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 4
+    
+  - codigo: 4
     nombre: Huaman Uma
     nombreAlternativo: No tiene
     significadoNombre: Cabeza del águila huamancha
@@ -54,8 +53,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 5
+    
+  - codigo: 5
     nombre: Linlin
     nombreAlternativo: Yana Linli y Moro
     significadoNombre: (No definido)
@@ -66,8 +65,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 6
+    
+  - codigo: 6
     nombre: Luntus (RUNTUS)
     nombreAlternativo: Luntus
     significadoNombre: Yema de huevo
@@ -78,8 +77,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 7
+    
+  - codigo: 7
     nombre: Muru Huarillo
     nombreAlternativo: Muru Wakrillo
     significadoNombre: Asta negra y blanca
@@ -90,8 +89,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Chuño
     lugar: Apurímac
-  - 
-    codigo: 8
+    
+  - codigo: 8
     nombre: Muru Linlin
     nombreAlternativo: No tiene
     significadoNombre: Linli de blanco y negro
@@ -102,8 +101,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 9
+    
+  - codigo: 9
     nombre: Muru Phuquya
     nombreAlternativo: Moro Phocoya
     significadoNombre: 
@@ -114,8 +113,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: 
     lugar: Apurímac
-  - 
-    codigo: 8
+    
+  - codigo: 8
     nombre: Palta Suso
     nombreAlternativo: Palteña
     significadoNombre: Roja plana
@@ -126,8 +125,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar, pelar y sopas
     lugar: Apurímac
-  - 
-    codigo: 9
+    
+  - codigo: 9
     nombre: Paqus
     nombreAlternativo: Pacos
     significadoNombre: (No definido)
@@ -138,8 +137,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Pelar, sopas
     lugar: Apurímac
-  - 
-    codigo: 10
+    
+  - codigo: 10
     nombre: Puka Ñawi Suyto
     nombreAlternativo: Yurac Huachala
     significadoNombre: Blanco que produce bastante. Con ojos rojos
@@ -150,8 +149,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 11
+    
+  - codigo: 11
     nombre: Puka Qulluna
     nombreAlternativo: No tiene
     significadoNombre: (No definido)
@@ -162,8 +161,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 12
+    
+  - codigo: 12
     nombre: Puka Shuallulla
     nombreAlternativo: Huancucho Rojo
     significadoNombre: Rojo ratero mentiroso
@@ -174,8 +173,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 13
+    
+  - codigo: 13
     nombre: Puma Maki
     nombreAlternativo: Pumaq Makin
     significadoNombre: Mano del puma
@@ -186,8 +185,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Chuño
     lugar: Apurímac
-  - 
-    codigo: 14
+    
+  - codigo: 14
     nombre: Qhachum Waqachi
     nombreAlternativo: Chocllos
     significadoNombre: Hace llorar a la yerna
@@ -198,8 +197,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 15
+    
+  - codigo: 15
     nombre: Risco
     nombreAlternativo: No tiene
     significadoNombre: (No definido)
@@ -210,8 +209,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 18
+    
+  - codigo: 18
     nombre: Salamanca
     nombreAlternativo: No tiene
     significadoNombre: (No definido)
@@ -222,8 +221,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 19
+    
+  - codigo: 19
     nombre: Simpa Waña
     nombreAlternativo: 
     significadoNombre: Papa amarga trenzada
@@ -234,8 +233,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Moraya y chuño
     lugar: Apurímac
-  - 
-    codigo: 16
+    
+  - codigo: 16
     nombre: Sunchu Papa
     nombreAlternativo: Paspa Sunchu
     significadoNombre: Papa aspera
@@ -246,8 +245,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 17
+    
+  - codigo: 17
     nombre: Suso
     nombreAlternativo: Puka Suso
     significadoNombre: Papa sin sabor
@@ -258,8 +257,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar o pelar
     lugar: Apurímac
-  - 
-    codigo: 18
+    
+  - codigo: 18
     nombre: Yana Linlin
     nombreAlternativo: Papa negra
     significadoNombre: (No definido)
@@ -270,8 +269,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 19
+    
+  - codigo: 19
     nombre: Yana Ñawi Pasña
     nombreAlternativo: Yana Chusña
     significadoNombre: Muchacha de ojos negros o azules
@@ -282,8 +281,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 20
+    
+  - codigo: 20
     nombre: Yana Putis
     nombreAlternativo: No tiene
     significadoNombre: (No definido)
@@ -294,8 +293,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 21
+    
+  - codigo: 21
     nombre: Yana Shuallulla
     nombreAlternativo: Huancucho Negro
     significadoNombre: Negro Ratero mentiroso
@@ -306,8 +305,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 22
+    
+  - codigo: 22
     nombre: Yana Suso
     nombreAlternativo: No tiene
     significadoNombre: Papa sin sabor
@@ -318,8 +317,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar, pelar y sopas
     lugar: Apurímac
-  - 
-    codigo: 23
+    
+  - codigo: 23
     nombre: Yana Wakchilla
     nombreAlternativo: No tiene
     significadoNombre: Garza negra
@@ -330,8 +329,8 @@ variedades:
     toleranciaALaHelada: 
     usoEnLaCocina: 
     lugar: Apurímac
-  - 
-    codigo: 28
+    
+  - codigo: 28
     nombre: Yuraq Sunchus
     nombreAlternativo: Paspa Sunchu
     significadoNombre: Papa áspera
@@ -342,8 +341,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar, pelar y sopas
     lugar: Apurímac
-  - 
-    codigo: 29
+    
+  - codigo: 29
     nombre: Yuraq Suyto
     nombreAlternativo: No tiene
     significadoNombre: Blanco alargado
@@ -354,8 +353,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 24
+    
+  - codigo: 24
     nombre: Yuraq Wachalla
     nombreAlternativo: Puka Ñawi Wachala
     significadoNombre: Blanco que produce bastante
@@ -366,8 +365,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
-  - 
-    codigo: 25
+    
+  - codigo: 25
     nombre: Yuraq Waña
     nombreAlternativo: No tiene
     significadoNombre: Papa amarga
@@ -378,8 +377,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Chuño y moraya
     lugar: Apurímac
-  - 
-    codigo: 26
+    
+  - codigo: 26
     nombre: Ampairas
     nombreAlternativo: No tiene
     significadoNombre: Ampairas, Amparaes (pueblo)
@@ -390,8 +389,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido, sopas
     lugar: Cusco
-  - 
-    codigo: 27
+    
+  - codigo: 27
     nombre: Cóndor Runtu
     nombreAlternativo: No tiene
     significadoNombre: Huevo de cóndor
@@ -402,8 +401,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y bonda
     lugar: Cusco
-  - 
-    codigo: 28
+    
+  - codigo: 28
     nombre: Llama Senqa
     nombreAlternativo: No tiene
     significadoNombre: Nariz de llama
@@ -414,8 +413,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y watia
     lugar: Cusco
-  - 
-    codigo: 29
+    
+  - codigo: 29
     nombre: Maqa Sonqo
     nombreAlternativo: No tiene
     significadoNombre: Corazón sin sabor
@@ -426,8 +425,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Watia, hervido y chuño
     lugar: Cusco
-  - 
-    codigo: 30
+    
+  - codigo: 30
     nombre: Pariwana
     nombreAlternativo: No tiene
     significadoNombre: Flamenco (ave)
@@ -438,8 +437,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido, sopas, al horno
     lugar: Cusco
-  - 
-    codigo: 31
+    
+  - codigo: 31
     nombre: Puka Chimaku
     nombreAlternativo: No tiene
     significadoNombre: Chiwako (zorzal, tordo) rojo
@@ -450,8 +449,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y chuño
     lugar: Cusco
-  - 
-    codigo: 38
+    
+  - codigo: 38
     nombre: Puka Churuspe
     nombreAlternativo: Puka Churuspi
     significadoNombre: Churuspi rojo
@@ -462,8 +461,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido, sopas y chuño
     lugar: Cusco
-  - 
-    codigo: 39
+    
+  - codigo: 39
     nombre: Puka Inkachu
     nombreAlternativo: 
     significadoNombre: De los inkas, rojo
@@ -474,8 +473,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido y watias
     lugar: Cusco
-  - 
-    codigo: 32
+    
+  - codigo: 32
     nombre: Puka Qhachun Waqachi
     nombreAlternativo: No tiene
     significadoNombre: La que hace llorar a la nuera, rojo
@@ -486,8 +485,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido, papa seca, al horno, watias
     lugar: Cusco
-  - 
-    codigo: 33
+    
+  - codigo: 33
     nombre: Puka Rumphu K´Usi
     nombreAlternativo: No tiene
     significadoNombre: CalabacÍn ovalado y rojo
@@ -498,8 +497,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Chuño, hervido, watia, chuño
     lugar: Cusco
-  - 
-    codigo: 34
+    
+  - codigo: 34
     nombre: Q´Ello Runthus
     nombreAlternativo: No tiene
     significadoNombre: Huevo amarillo
@@ -510,8 +509,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, purés y hervido
     lugar: Cusco
-  - 
-    codigo: 35
+    
+  - codigo: 35
     nombre: Q´Ewillo
     nombreAlternativo: Alka Charka
     significadoNombre: Serpenteante
@@ -522,8 +521,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Moraya, chuño
     lugar: Cusco
-  - 
-    codigo: 36
+    
+  - codigo: 36
     nombre: Suytu
     nombreAlternativo: Yuraq Suytu
     significadoNombre: Alargado
@@ -534,8 +533,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y bonda
     lugar: Cusco
-  - 
-    codigo: 37
+    
+  - codigo: 37
     nombre: Uqi Suyto
     nombreAlternativo: No tiene
     significadoNombre: Perro negro
@@ -546,8 +545,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y sopas
     lugar: Cusco
-  - 
-    codigo: 38
+    
+  - codigo: 38
     nombre: Yana Charka
     nombreAlternativo: No tiene
     significadoNombre: Lugar negro
@@ -558,8 +557,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Chuño
     lugar: Cusco
-  - 
-    codigo: 39
+    
+  - codigo: 39
     nombre: Yana Churuspe
     nombreAlternativo: Yana Churuspi
     significadoNombre: Churuspi negro
@@ -570,8 +569,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y watias
     lugar: Cusco
-  - 
-    codigo: 48
+    
+  - codigo: 48
     nombre: Yana Imilia
     nombreAlternativo: No tiene
     significadoNombre: Muchacha juvenil
@@ -582,8 +581,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido, chuño, watia y sopas
     lugar: Cusco
-  - 
-    codigo: 49
+    
+  - codigo: 49
     nombre: Yana Rumphu K´Usi
     nombreAlternativo: No tiene
     significadoNombre: Calabacín ovalado y negro
@@ -594,8 +593,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Chuño, hervido, watia, chuño
     lugar: Cusco
-  - 
-    codigo: 40
+    
+  - codigo: 40
     nombre: Yana Willkas
     nombreAlternativo: No tiene
     significadoNombre: Sagrado negro
@@ -606,8 +605,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Chuño, moraya
     lugar: Cusco
-  - 
-    codigo: 41
+    
+  - codigo: 41
     nombre: Yuraq Inkachu
     nombreAlternativo: No tiene
     significadoNombre: De los inkas, blanco
@@ -618,8 +617,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido y watias
     lugar: Cusco
-  - 
-    codigo: 42
+    
+  - codigo: 42
     nombre: Yuraq Sole
     nombreAlternativo: No tiene
     significadoNombre: Sole blanco
@@ -630,8 +629,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido y chuño
     lugar: Cusco
-  - 
-    codigo: 43
+    
+  - codigo: 43
     nombre: Yuraq Willkas
     nombreAlternativo: No tiene
     significadoNombre: Sagrado blanco
@@ -642,8 +641,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido, chuño, bonda y sopas
     lugar: Cusco
-  - 
-    codigo: 44
+    
+  - codigo: 44
     nombre: Allqa Palta
     nombreAlternativo: Wanka Lliqlla
     significadoNombre: Aplanado bicolor- Manta de wanka
@@ -654,8 +653,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido y sopa
     lugar: Huancavelica
-  - 
-    codigo: 45
+    
+  - codigo: 45
     nombre: Allqa Walash
     nombreAlternativo: Walash
     significadoNombre: Joven bicolor
@@ -666,8 +665,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 46
+    
+  - codigo: 46
     nombre: Aqu Suytu
     nombreAlternativo: Yuraq Suytu
     significadoNombre: Arenoso Largo
@@ -678,8 +677,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
-  - 
-    codigo: 47
+    
+  - codigo: 47
     nombre: Camotillo
     nombreAlternativo: No tiene
     significadoNombre: Camote pequeño
@@ -690,8 +689,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 58
+    
+  - codigo: 58
     nombre: Caramelo Suytu
     nombreAlternativo: No tiene
     significadoNombre: Caramelo largo
@@ -702,8 +701,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 59
+    
+  - codigo: 59
     nombre: Chiqchi Pasña
     nombreAlternativo: Yuraq Chiqchi Pasña
     significadoNombre: Señorita chispeada
@@ -714,8 +713,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
-  - 
-    codigo: 48
+    
+  - codigo: 48
     nombre: Cordovina
     nombreAlternativo: Clavelina
     significadoNombre: Cordovina
@@ -726,8 +725,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 49
+    
+  - codigo: 49
     nombre: Dusis
     nombreAlternativo: No tiene
     significadoNombre: (No definido)
@@ -738,8 +737,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 50
+    
+  - codigo: 50
     nombre: Huamantanga
     nombreAlternativo: Puka Aqu Suytu
     significadoNombre: Roja arenosa larga - Huamantanga (es un pueblo)
@@ -750,8 +749,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 51
+    
+  - codigo: 51
     nombre: Kichka Matanka
     nombreAlternativo: No tiene
     significadoNombre: Espina en la espalda
@@ -762,8 +761,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 52
+    
+  - codigo: 52
     nombre: Kuchipa Akan
     nombreAlternativo: No tiene
     significadoNombre: Excremento de chancho
@@ -774,8 +773,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 53
+    
+  - codigo: 53
     nombre: Markina
     nombreAlternativo: No tiene
     significadoNombre: Markina
@@ -786,8 +785,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
-  - 
-    codigo: 54
+    
+  - codigo: 54
     nombre: Muru Llumchuy Waqachi
     nombreAlternativo: No tiene
     significadoNombre: Bicolor hace llorar a la nuera
@@ -798,8 +797,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 55
+    
+  - codigo: 55
     nombre: Muru Wayru
     nombreAlternativo: No tiene
     significadoNombre: Wayru bicolor
@@ -810,8 +809,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 68
+    
+  - codigo: 68
     nombre: Payapa Ankun
     nombreAlternativo: No tiene
     significadoNombre: Talon de Anciana
@@ -822,8 +821,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido y chuño
     lugar: Huancavelica
-  - 
-    codigo: 69
+    
+  - codigo: 69
     nombre: Peruanita
     nombreAlternativo: No tiene
     significadoNombre: Color de la bandera peruana (pequeña)
@@ -834,8 +833,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 56
+    
+  - codigo: 56
     nombre: Prescos
     nombreAlternativo: Bayo Botas, Qompis
     significadoNombre: (No definido)
@@ -846,8 +845,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 57
+    
+  - codigo: 57
     nombre: Puka Botijuela
     nombreAlternativo: No tiene
     significadoNombre: Botijuela roja
@@ -858,8 +857,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 58
+    
+  - codigo: 58
     nombre: Puka Chiqchi Pasña
     nombreAlternativo: Puka Pasña
     significadoNombre: Señorita roja chispeada
@@ -870,8 +869,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 59
+    
+  - codigo: 59
     nombre: Puka Wayru
     nombreAlternativo: No tiene
     significadoNombre: Wayru rojo
@@ -882,8 +881,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
-  - 
-    codigo: 60
+    
+  - codigo: 60
     nombre: Puqya
     nombreAlternativo: No tiene
     significadoNombre: Puqya
@@ -894,8 +893,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
-  - 
-    codigo: 61
+    
+  - codigo: 61
     nombre: Qalapa Waran
     nombreAlternativo: Waripa Tacllan
     significadoNombre: Ropa vieja- Arado de pie de joven
@@ -906,8 +905,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 62
+    
+  - codigo: 62
     nombre: Qullqi Tupu
     nombreAlternativo: Yuraq Peruanita
     significadoNombre: Tupu (prendedor) de plata
@@ -918,8 +917,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 63
+    
+  - codigo: 63
     nombre: Runtus
     nombreAlternativo: No tiene
     significadoNombre: Huevo
@@ -930,8 +929,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Causa, hervido
     lugar: Huancavelica
-  - 
-    codigo: 78
+    
+  - codigo: 78
     nombre: Sangre De Toro
     nombreAlternativo: Turupa Yawar
     significadoNombre: Sangre de toro
@@ -942,8 +941,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 79
+    
+  - codigo: 79
     nombre: Tantas
     nombreAlternativo: Riplan
     significadoNombre: Panes
@@ -954,8 +953,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido, sopas y guisos
     lugar: Huancavelica
-  - 
-    codigo: 80
+    
+  - codigo: 80
     nombre: Trajin Waqachi
     nombreAlternativo: No tiene
     significadoNombre: El que hace llorar al arriero
@@ -966,8 +965,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 81
+    
+  - codigo: 81
     nombre: Wakapa Qallun
     nombreAlternativo: No tiene
     significadoNombre: Lengua de vaca
@@ -978,8 +977,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 82
+    
+  - codigo: 82
     nombre: Witqis
     nombreAlternativo: Sirina
     significadoNombre: Wiqtis -Sirena
@@ -990,8 +989,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 83
+    
+  - codigo: 83
     nombre: Yana Chiqchi Pasña
     nombreAlternativo: No tiene
     significadoNombre: Señorita negra chispeada
@@ -1002,8 +1001,8 @@ variedades:
     toleranciaALaHelada: Débil
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
-  - 
-    codigo: 84
+    
+  - codigo: 84
     nombre: Yana Gaspar
     nombreAlternativo: Yana ñata
     significadoNombre: Gaspar Negro
@@ -1014,8 +1013,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 85
+    
+  - codigo: 85
     nombre: Yana Llumchuy Waqachi
     nombreAlternativo: No tiene
     significadoNombre: Negra hace llorar a la nuera
@@ -1026,8 +1025,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 86
+    
+  - codigo: 86
     nombre: Yana Manwa
     nombreAlternativo: Manua
     significadoNombre: Manwa negra
@@ -1038,8 +1037,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Chuño y sopa
     lugar: Huancavelica
-  - 
-    codigo: 87
+    
+  - codigo: 87
     nombre: Yana Ñata
     nombreAlternativo: Ñata
     significadoNombre: Achatado Negro
@@ -1050,8 +1049,8 @@ variedades:
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 88
+    
+  - codigo: 88
     nombre: Yana Winqu
     nombreAlternativo: Winqu
     significadoNombre: Negro torcido
@@ -1062,8 +1061,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Hervido
     lugar: Huancavelica
-  - 
-    codigo: 89
+    
+  - codigo: 89
     nombre: Yuraq Ipillu
     nombreAlternativo: Yuraq Culebrina
     significadoNombre: Ipillu blanco
@@ -1074,8 +1073,8 @@ variedades:
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Chuño
     lugar: Huancavelica
-  - 
-    codigo: 90
+    
+  - codigo: 90
     nombre: Yuraq Mako
     nombreAlternativo: Maco
     significadoNombre: Maco blanco

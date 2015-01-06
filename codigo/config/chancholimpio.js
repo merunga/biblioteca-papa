@@ -284,10 +284,11 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         function thisfun(submenu) {
           if(_.isObject(submenu)) {
             var keys = _.keys(submenu);
+            // solo tiene index
             if(_.isEmpty(_.difference(keys, ['title','index']))) {
               _.extend(submenu, submenu['index']);
               delete submenu['index'];
-            } else {
+            } else { // tiene index y otras pages
               if(_.contains(keys, 'index')) {
                 submenu.title = submenu.index.title;
                 if(submenu.index.indice) {
@@ -338,6 +339,13 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         }
 
         thisfun(menu);
+        for(var key in menu['.']) {
+          var rootPage = menu['.'][key];
+          if(key != 'index' && key != 'title') {
+            menu[key] = rootPage;
+            delete menu['.'][key];
+          }
+        }
 
         var sortedMenu = {};
         sortKeys(menu,sortedMenu);
