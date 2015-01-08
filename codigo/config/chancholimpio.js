@@ -235,7 +235,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       .pipe($.if(watch, reload({stream: true})));
   });
 
-  gulp.task('pages', function (cb) {
+  gulp.task('pages', function () {
     
     src.pages = path.join(
       rootDir,
@@ -281,7 +281,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       }, function(err) {
         if (err) throw err
 
-        function thisfun(submenu) {
+        function promoteIndex(submenu) {
           if(_.isObject(submenu)) {
             var keys = _.keys(submenu);
             // solo tiene index
@@ -296,7 +296,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
                 }
               }
               _.each(keys, function(key, index) {
-                thisfun(submenu[key]);
+                promoteIndex(submenu[key]);
               });
             }            
           }         
@@ -338,7 +338,8 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           }
         }
 
-        thisfun(menu);
+        promoteIndex(menu);
+        
         for(var key in menu['.']) {
           var rootPage = menu['.'][key];
           if(key != 'index' && key != 'title') {

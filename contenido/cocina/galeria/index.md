@@ -1,6 +1,8 @@
 ---
 title: Galería de fotos
 
+indice: 2
+
 fotos:
   - codigo: 001cc
     nombre: Lenteja uchu o Picante de lentejas

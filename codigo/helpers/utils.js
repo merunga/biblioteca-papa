@@ -46,6 +46,14 @@ module.exports.isObject = function (it, options) {
   }
 };
 
+module.exports.isntEmpty = function (it, options) {
+  if (!_.isEmpty(it)) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+};
+
 module.exports.firstKey = function (it) {
   if (_.keys(it).length > 0) {
     return _.keys(it)[0];

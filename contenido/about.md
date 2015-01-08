@@ -1,6 +1,7 @@
 ---
 title: Sobre nosotros
 indice: 9999
+layout: default
 ---
 
 {{#markdown}}
