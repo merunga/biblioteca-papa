@@ -354,7 +354,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
         for(var key in menu['.']) {
           var rootPage = menu['.'][key];
-          if(key != 'index' && key != 'title') {
+          if(key != 'title') {
             menu[key] = rootPage;
             delete menu['.'][key];
           }
@@ -492,7 +492,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
   // Build
   gulp.task('build', ['clean'], function (cb) {
-    runSequence(['images', /*'vendor',*/ 'webroot', 'fonts', 'pages', 'styles', 'scripts'], cb);
+    runSequence(['images', 'vendor', 'webroot', 'fonts', 'pages', 'styles', 'scripts'], cb);
   });
 
   function serve() {
@@ -506,6 +506,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       // Note: this uses an unsigned certificate which on first access
       //     will present a certificate warning in the browser.
       // https: true,
+      port: 5000,
       server: {
         baseDir: DEST,
         middleware: function (req, res, cb) {
