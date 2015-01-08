@@ -1,5 +1,6 @@
 var gutil = require('gulp-util');
 var _ = require('lodash');
+var path = require('path');
 
 module.exports.log = function(content) {
   gutil.log(content);
@@ -30,8 +31,6 @@ module.exports.slugify = function(str) {
     .replace(/-+$/, '');            // Trim - from end of text
 };
 
-var path = require('path');
-
 module.exports.relative = function(from, to) {
   var relativePath = path.relative(path.resolve(from), path.resolve(to));
 
@@ -61,3 +60,7 @@ module.exports.firstKey = function (it) {
     return undefined;
   }
 };
+
+module.exports.baseUrl = function(resourcePath) {
+  return path.join('/', process.env.BASE_URL, resourcePath);
+}

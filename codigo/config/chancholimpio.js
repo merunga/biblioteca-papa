@@ -67,10 +67,11 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
   // }
 
   // Settings
-  var RELEASE_URL = '<URL>';
+  var RELEASE_URL = 'biblioteca-papa';
   var DEST = config.dest;             // The build output folder
   var RELEASE = !!argv.release;         // Minimize and optimize during a build?
   var BASE_URL = RELEASE? RELEASE_URL: '';
+  process.env.BASE_URL = BASE_URL;
   var GOOGLE_ANALYTICS_ID = 'UA-XXXXX-X';   // https://www.google.com/analytics/web/
   var AUTOPREFIXER_BROWSERS = [         // https://github.com/ai/autoprefixer
     'ie >= 10',
@@ -247,37 +248,48 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       var menu = {};
       async.each(files, function(filePath, cb) {
         fs.readFile(filePath, 'utf8', function(err, data){
-            if (err) throw err
+          if (err) {
+            throw err
+          }
 
-            var relPath = filePath.replace(path.join(rootDir, paths.content.self, '/'), '');
+          var pageData = fm(data);
+          
+          if(pageData.excludeFromMenu) {
+            return;
+          }
 
-            var absolutePath = path.join('/',relPath.replace(/(.*)\.[^.]+$/, "$1.html"));
+          var relPath = filePath.replace(path.join(rootDir, paths.content.self, '/'), '');
 
-            var categories = path.dirname(relPath).split(path.sep);
-            var contentKey = path.basename(relPath).replace(/(.*)\.[^.]+$/, "$1");
+          var absolutePath = path.join(
+            '/', BASE_URL,
+            relPath.replace(/(.*)\.[^.]+$/, "$1.html")
+          );
 
-            var it = menu;
-            for(var i in categories) {
-              var cat = categories[i];
-              if(!it[cat]) {
-                it[cat] = {
-                  title: cat
-                };
-              }
-              it = it[cat];
+          var categories = path.dirname(relPath).split(path.sep);
+          var contentKey = path.basename(relPath).replace(/(.*)\.[^.]+$/, "$1");
+
+          var it = menu;
+          for(var i in categories) {
+            var cat = categories[i];
+            if(!it[cat]) {
+              it[cat] = {
+                title: cat
+              };
             }
-            
-            var page = it[contentKey] = _.extend({
-              isPage: true,
-              absolutePath: absolutePath
-            }, _.omit( fm(data).attributes, 'layout' ));
+            it = it[cat];
+          }
+          
+          var page = it[contentKey] = _.extend({
+            isPage: true,
+            absolutePath: absolutePath
+          }, _.omit( pageData.attributes, 'layout' ));
 
-            if(!page.title) {
-              page.title = page.titulo || page.nombre || contentKey;
-            }
+          if(!page.title) {
+            page.title = page.titulo || page.nombre || contentKey;
+          }
 
-            cb();
-          });
+          cb();
+        });
       }, function(err) {
         if (err) throw err
 
@@ -339,7 +351,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         }
 
         promoteIndex(menu);
-        
+
         for(var key in menu['.']) {
           var rootPage = menu['.'][key];
           if(key != 'index' && key != 'title') {
@@ -483,10 +495,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
     runSequence(['images', /*'vendor',*/ 'webroot', 'fonts', 'pages', 'styles', 'scripts'], cb);
   });
 
-
-  // Run BrowserSync
-  gulp.task('serve', ['build'], function () {
-
+  function serve() {
     var path = require('path');
     var url = require('url');
     var fs = require('fs');
@@ -510,6 +519,11 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         }
       }
     });
+  };
+
+  // Run BrowserSync
+  gulp.task('serve', ['build'], function() {
+    serve();
 
     gulp.watch(src.files, ['files']);
     gulp.watch(src.webroot, ['webroot']);
@@ -520,31 +534,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
     watch = true;
   });
 
-  gulp.task('serve-nobuild', function () {
-    var path = require('path');
-    var url = require('url');
-    var fs = require('fs');
-
-    browserSync({
-      notify: false,
-      // Run as an https by uncommenting 'https: true'
-      // Note: this uses an unsigned certificate which on first access
-      //     will present a certificate warning in the browser.
-      // https: true,
-      server: {
-        baseDir: DEST,
-        middleware: function (req, res, cb) {
-          var uri = url.parse(req.url);
-          if (uri.pathname.length > 1 &&
-            path.extname(uri.pathname) === '' &&
-            fs.existsSync(DEST + uri.pathname + '.html')) {
-            req.url = uri.pathname + '.html' + (uri.search || '');
-          }
-          cb();
-        }
-      }
-    });
-  });
+  gulp.task('serve-nobuild', serve);
 
   gulp.task('deploy-gh-pages', function () {
     return gulp.src(DEST + '/**/*')
