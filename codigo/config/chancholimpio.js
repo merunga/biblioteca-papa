@@ -48,6 +48,10 @@ var defaultPaths = {
       self: 'scripts',
       src: '{plugins,main,*}.js',
       bundle: 'bundle.js'
+    },
+    vendor: {
+      script: 'vendor.js',
+      bundle: 'vendor.js'
     }
   }
 };
@@ -123,24 +127,19 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
   // 3rd party libraries
   gulp.task('vendor', function () {
-    return merge(
-      gulp.src(path.join(rootDir,'bower_components/jquery/dist/**'))
-        .pipe(gulp.dest(path.join(
-          DEST,
-          paths.code.assets.self,
-          paths.code.assets.vendor,
-          'jquery-' + pkgs.jquery
-        ))),
-      gulp.src(path.join(rootDir,'bower_components/modernizr/modernizr.js'))
-        .pipe($.rename('modernizr.min.js'))
-        .pipe($.uglify())
-        .pipe(gulp.dest(path.join(
-          DEST,
-          paths.code.assets.self,
-          paths.code.assets.vendor,
-          'modernizr-' + pkgs.modernizr
-        )))
-    );
+    gulp.src(path.join(
+        rootDir,
+        paths.code.self,
+        paths.code.scripts.self,
+        paths.code.vendor.script
+      ))
+      .pipe($.include())
+      .pipe($.if(RELEASE, $.uglify()))
+      .pipe(gulp.dest(path.join(
+        DEST,
+        paths.code.assets.self,
+        paths.code.scripts.self
+      )));
   });
 
   // Static files
@@ -480,6 +479,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
     return gulp.src(src.scripts)
       .pipe($.if(!RELEASE, $.sourcemaps.init()))
       .pipe($.concat(paths.code.scripts.bundle))
+      .pipe($.include())
       .pipe($.if(RELEASE, $.uglify()))
       .pipe($.if(!RELEASE, $.sourcemaps.write()))
       .pipe(gulp.dest(path.join(

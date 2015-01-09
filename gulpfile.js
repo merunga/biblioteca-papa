@@ -40,6 +40,10 @@ var opt = {
         self: 'scripts',
         src: '{plugins,main,*}.js',
         bundle: 'bundle.js'
+      },
+      vendor: {
+        script: 'vendor.js',
+        bundle: 'vendor.js'
       }
     }
   }
