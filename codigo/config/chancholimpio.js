@@ -252,7 +252,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           }
 
           var pageData = fm(data);
-          
+
           if(pageData.excludeFromMenu) {
             return;
           }
@@ -324,6 +324,10 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           var i, len = keys.length;
 
           keys = _.sortBy(keys, function(key) {
+            if(key == 'index') {
+              return 0
+            }
+
             var page = orig[key];
             if(page) {
               if(page.hasOwnProperty('indice')) {

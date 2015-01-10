@@ -17,6 +17,9 @@
         {{else}}
           {{> menu this}}
         {{/isnt}}
+      {{else}}
+        <li><a href="{{absolutePath}}">{{title}}</a></li>
+        <li class="divider"></li>
       {{/isnt}}
     {{/isnt}}
   {{/isntEmpty}}
