@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: isotope
+itemsField: variedades
+itemSelector: ".variedad"
+containerId: "variedades"
 
 title: Variedades
 
@@ -13,7 +16,6 @@ variedades:
     colorPrincipalDeLaFlor: Violeta
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
@@ -33,23 +35,19 @@ variedades:
   - codigo: 3
     nombre: Compis
     nombreAlternativo: Puka Imilla
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Intermedio
     colorPulpa: Blanco
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
   - codigo: 4
     nombre: Huaman Uma
-    nombreAlternativo: No tiene
     significadoNombre: Cabeza del águila huamancha
     colorPrincipalDeLaFlor: Violeta
     toleranciaALaGranizada: Intermedio
     colorPulpa: Amarillo claro
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
@@ -57,11 +55,9 @@ variedades:
   - codigo: 5
     nombre: Linlin
     nombreAlternativo: Yana Linli y Moro
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
@@ -73,7 +69,6 @@ variedades:
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Intermedio
     colorPulpa: Amarillo intenso
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
@@ -92,12 +87,10 @@ variedades:
     
   - codigo: 8
     nombre: Muru Linlin
-    nombreAlternativo: No tiene
     significadoNombre: Linli de blanco y negro
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
@@ -105,55 +98,46 @@ variedades:
   - codigo: 9
     nombre: Muru Phuquya
     nombreAlternativo: Moro Phocoya
-    significadoNombre: 
     colorPrincipalDeLaFlor: Rosado
     toleranciaALaGranizada: Fuerte
     colorPulpa: Blanco
-    formaRara: No tiene
     toleranciaALaHelada: Fuerte
-    usoEnLaCocina: 
     lugar: Apurímac
     
-  - codigo: 8
+  - codigo: 10
     nombre: Palta Suso
     nombreAlternativo: Palteña
     significadoNombre: Roja plana
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Amarillo claro
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar, pelar y sopas
     lugar: Apurímac
     
-  - codigo: 9
+  - codigo: 11
     nombre: Paqus
     nombreAlternativo: Pacos
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Débil
     colorPulpa: Amarillo claro
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Pelar, sopas
     lugar: Apurímac
     
-  - codigo: 10
+  - codigo: 12
     nombre: Puka Ñawi Suyto
     nombreAlternativo: Yurac Huachala
     significadoNombre: Blanco que produce bastante. Con ojos rojos
     colorPrincipalDeLaFlor: Violeta
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 11
+  - codigo: 13
     nombre: Puka Qulluna
-    nombreAlternativo: No tiene
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema/rojo (anillo angosto)
@@ -162,19 +146,18 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 12
+  - codigo: 14
     nombre: Puka Shuallulla
     nombreAlternativo: Huancucho Rojo
     significadoNombre: Rojo ratero mentiroso
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Blanco
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 13
+  - codigo: 15
     nombre: Puma Maki
     nombreAlternativo: Pumaq Makin
     significadoNombre: Mano del puma
@@ -186,7 +169,7 @@ variedades:
     usoEnLaCocina: Chuño
     lugar: Apurímac
     
-  - codigo: 14
+  - codigo: 16
     nombre: Qhachum Waqachi
     nombreAlternativo: Chocllos
     significadoNombre: Hace llorar a la yerna
@@ -198,136 +181,110 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 15
+  - codigo: 17
     nombre: Risco
-    nombreAlternativo: No tiene
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
   - codigo: 18
     nombre: Salamanca
-    nombreAlternativo: No tiene
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Azul celeste
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
   - codigo: 19
     nombre: Simpa Waña
-    nombreAlternativo: 
     significadoNombre: Papa amarga trenzada
     colorPrincipalDeLaFlor: Azul
     toleranciaALaGranizada: Intermedio
     colorPulpa: Blanco
-    formaRara: No tiene
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Moraya y chuño
     lugar: Apurímac
     
-  - codigo: 16
+  - codigo: 20
     nombre: Sunchu Papa
     nombreAlternativo: Paspa Sunchu
     significadoNombre: Papa aspera
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 17
+  - codigo: 21
     nombre: Suso
     nombreAlternativo: Puka Suso
     significadoNombre: Papa sin sabor
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar o pelar
     lugar: Apurímac
     
-  - codigo: 18
+  - codigo: 22
     nombre: Yana Linlin
     nombreAlternativo: Papa negra
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 19
+  - codigo: 23
     nombre: Yana Ñawi Pasña
     nombreAlternativo: Yana Chusña
     significadoNombre: Muchacha de ojos negros o azules
     colorPrincipalDeLaFlor: Rojo morado o morado
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 20
+  - codigo: 24
     nombre: Yana Putis
-    nombreAlternativo: No tiene
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema/rojo. Anillo angosto
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 21
+  - codigo: 25
     nombre: Yana Shuallulla
     nombreAlternativo: Huancucho Negro
     significadoNombre: Negro Ratero mentiroso
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Blanco/Morado. Anillo vascular y medalla
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 22
+  - codigo: 26
     nombre: Yana Suso
-    nombreAlternativo: No tiene
     significadoNombre: Papa sin sabor
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema/morado. Anillo angosto
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar, pelar y sopas
     lugar: Apurímac
     
-  - codigo: 23
+  - codigo: 27
     nombre: Yana Wakchilla
-    nombreAlternativo: No tiene
     significadoNombre: Garza negra
-    colorPrincipalDeLaFlor: 
-    toleranciaALaGranizada: 
-    colorPulpa: 
-    formaRara: 
-    toleranciaALaHelada: 
-    usoEnLaCocina: 
     lugar: Apurímac
     
   - codigo: 28
@@ -337,62 +294,53 @@ variedades:
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Mondar, pelar y sopas
     lugar: Apurímac
     
   - codigo: 29
     nombre: Yuraq Suyto
-    nombreAlternativo: No tiene
     significadoNombre: Blanco alargado
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 24
+  - codigo: 30
     nombre: Yuraq Wachalla
     nombreAlternativo: Puka Ñawi Wachala
     significadoNombre: Blanco que produce bastante
     colorPrincipalDeLaFlor: Violeta
     toleranciaALaGranizada: Intermedio
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Intermedio
     usoEnLaCocina: Watia, hervido
     lugar: Apurímac
     
-  - codigo: 25
+  - codigo: 31
     nombre: Yuraq Waña
-    nombreAlternativo: No tiene
     significadoNombre: Papa amarga
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Fuerte
     colorPulpa: Blanco
-    formaRara: No tiene
     toleranciaALaHelada: Fuerte
     usoEnLaCocina: Chuño y moraya
     lugar: Apurímac
     
-  - codigo: 26
+  - codigo: 32
     nombre: Ampairas
-    nombreAlternativo: No tiene
     significadoNombre: Ampairas, Amparaes (pueblo)
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Débil
     colorPulpa: Blanco
-    formaRara: No tiene
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido, sopas
     lugar: Cusco
     
-  - codigo: 27
+  - codigo: 33
     nombre: Cóndor Runtu
-    nombreAlternativo: No tiene
     significadoNombre: Huevo de cóndor
     colorPrincipalDeLaFlor: Morado oscuro con acúmenes blancos
     toleranciaALaGranizada: Débil
@@ -402,9 +350,8 @@ variedades:
     usoEnLaCocina: Hervido y bonda
     lugar: Cusco
     
-  - codigo: 28
+  - codigo: 34
     nombre: Llama Senqa
-    nombreAlternativo: No tiene
     significadoNombre: Nariz de llama
     colorPrincipalDeLaFlor: Violeta
     toleranciaALaGranizada: Débil
@@ -414,21 +361,18 @@ variedades:
     usoEnLaCocina: Hervido y watia
     lugar: Cusco
     
-  - codigo: 29
+  - codigo: 35
     nombre: Maqa Sonqo
-    nombreAlternativo: No tiene
     significadoNombre: Corazón sin sabor
     colorPrincipalDeLaFlor: Rosado a rojo
     toleranciaALaGranizada: Débil
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Débil
     usoEnLaCocina: Watia, hervido y chuño
     lugar: Cusco
     
-  - codigo: 30
+  - codigo: 36
     nombre: Pariwana
-    nombreAlternativo: No tiene
     significadoNombre: Flamenco (ave)
     colorPrincipalDeLaFlor: Violeta
     toleranciaALaGranizada: Intermedio
@@ -438,9 +382,8 @@ variedades:
     usoEnLaCocina: Hervido, sopas, al horno
     lugar: Cusco
     
-  - codigo: 31
+  - codigo: 37
     nombre: Puka Chimaku
-    nombreAlternativo: No tiene
     significadoNombre: Chiwako (zorzal, tordo) rojo
     colorPrincipalDeLaFlor: Lila
     toleranciaALaGranizada: Débil
@@ -464,19 +407,16 @@ variedades:
     
   - codigo: 39
     nombre: Puka Inkachu
-    nombreAlternativo: 
     significadoNombre: De los inkas, rojo
     colorPrincipalDeLaFlor: Rosado a rojo
     toleranciaALaGranizada: Débil
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido y watias
     lugar: Cusco
     
-  - codigo: 32
+  - codigo: 40
     nombre: Puka Qhachun Waqachi
-    nombreAlternativo: No tiene
     significadoNombre: La que hace llorar a la nuera, rojo
     colorPrincipalDeLaFlor: Rojo Morado
     toleranciaALaGranizada: Intermedio
@@ -486,9 +426,8 @@ variedades:
     usoEnLaCocina: Hervido, papa seca, al horno, watias
     lugar: Cusco
     
-  - codigo: 33
+  - codigo: 41
     nombre: Puka Rumphu K´Usi
-    nombreAlternativo: No tiene
     significadoNombre: CalabacÍn ovalado y rojo
     colorPrincipalDeLaFlor: Morado sin botones
     toleranciaALaGranizada: Intermedio
@@ -498,9 +437,8 @@ variedades:
     usoEnLaCocina: Chuño, hervido, watia, chuño
     lugar: Cusco
     
-  - codigo: 34
+  - codigo: 42
     nombre: Q´Ello Runthus
-    nombreAlternativo: No tiene
     significadoNombre: Huevo amarillo
     colorPrincipalDeLaFlor: Blanco Intermedio
     toleranciaALaGranizada: Intermedio
@@ -510,7 +448,7 @@ variedades:
     usoEnLaCocina: Watia, purés y hervido
     lugar: Cusco
     
-  - codigo: 35
+  - codigo: 43
     nombre: Q´Ewillo
     nombreAlternativo: Alka Charka
     significadoNombre: Serpenteante
@@ -522,7 +460,7 @@ variedades:
     usoEnLaCocina: Moraya, chuño
     lugar: Cusco
     
-  - codigo: 36
+  - codigo: 44
     nombre: Suytu
     nombreAlternativo: Yuraq Suytu
     significadoNombre: Alargado
@@ -534,9 +472,8 @@ variedades:
     usoEnLaCocina: Hervido y bonda
     lugar: Cusco
     
-  - codigo: 37
+  - codigo: 45
     nombre: Uqi Suyto
-    nombreAlternativo: No tiene
     significadoNombre: Perro negro
     colorPrincipalDeLaFlor: Azul morado
     toleranciaALaGranizada: Débil
@@ -546,9 +483,8 @@ variedades:
     usoEnLaCocina: Hervido y sopas
     lugar: Cusco
     
-  - codigo: 38
+  - codigo: 46
     nombre: Yana Charka
-    nombreAlternativo: No tiene
     significadoNombre: Lugar negro
     colorPrincipalDeLaFlor: Morado oscuro
     toleranciaALaGranizada: Intermedio
@@ -558,7 +494,7 @@ variedades:
     usoEnLaCocina: Chuño
     lugar: Cusco
     
-  - codigo: 39
+  - codigo: 47
     nombre: Yana Churuspe
     nombreAlternativo: Yana Churuspi
     significadoNombre: Churuspi negro
@@ -572,7 +508,6 @@ variedades:
     
   - codigo: 48
     nombre: Yana Imilia
-    nombreAlternativo: No tiene
     significadoNombre: Muchacha juvenil
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
@@ -584,7 +519,6 @@ variedades:
     
   - codigo: 49
     nombre: Yana Rumphu K´Usi
-    nombreAlternativo: No tiene
     significadoNombre: Calabacín ovalado y negro
     colorPrincipalDeLaFlor: Lila pálido
     toleranciaALaGranizada: Débil
@@ -594,9 +528,8 @@ variedades:
     usoEnLaCocina: Chuño, hervido, watia, chuño
     lugar: Cusco
     
-  - codigo: 40
+  - codigo: 50
     nombre: Yana Willkas
-    nombreAlternativo: No tiene
     significadoNombre: Sagrado negro
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
@@ -606,21 +539,18 @@ variedades:
     usoEnLaCocina: Chuño, moraya
     lugar: Cusco
     
-  - codigo: 41
+  - codigo: 51
     nombre: Yuraq Inkachu
-    nombreAlternativo: No tiene
     significadoNombre: De los inkas, blanco
     colorPrincipalDeLaFlor: Blanco pálido
     toleranciaALaGranizada: Débil
     colorPulpa: Crema
-    formaRara: No tiene
     toleranciaALaHelada: Débil
     usoEnLaCocina: Hervido y watias
     lugar: Cusco
     
-  - codigo: 42
+  - codigo: 52
     nombre: Yuraq Sole
-    nombreAlternativo: No tiene
     significadoNombre: Sole blanco
     colorPrincipalDeLaFlor: Lila oscura
     toleranciaALaGranizada: Intermedio
@@ -630,9 +560,8 @@ variedades:
     usoEnLaCocina: Hervido y chuño
     lugar: Cusco
     
-  - codigo: 43
+  - codigo: 53
     nombre: Yuraq Willkas
-    nombreAlternativo: No tiene
     significadoNombre: Sagrado blanco
     colorPrincipalDeLaFlor: Lila oscura
     toleranciaALaGranizada: Intermedio
@@ -642,7 +571,7 @@ variedades:
     usoEnLaCocina: Hervido, chuño, bonda y sopas
     lugar: Cusco
     
-  - codigo: 44
+  - codigo: 54
     nombre: Allqa Palta
     nombreAlternativo: Wanka Lliqlla
     significadoNombre: Aplanado bicolor- Manta de wanka
@@ -654,7 +583,7 @@ variedades:
     usoEnLaCocina: Watia, hervido y sopa
     lugar: Huancavelica
     
-  - codigo: 45
+  - codigo: 55
     nombre: Allqa Walash
     nombreAlternativo: Walash
     significadoNombre: Joven bicolor
@@ -666,7 +595,7 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 46
+  - codigo: 56
     nombre: Aqu Suytu
     nombreAlternativo: Yuraq Suytu
     significadoNombre: Arenoso Largo
@@ -678,9 +607,8 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
     
-  - codigo: 47
+  - codigo: 57
     nombre: Camotillo
-    nombreAlternativo: No tiene
     significadoNombre: Camote pequeño
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -692,7 +620,6 @@ variedades:
     
   - codigo: 58
     nombre: Caramelo Suytu
-    nombreAlternativo: No tiene
     significadoNombre: Caramelo largo
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Intermedio
@@ -714,7 +641,7 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
     
-  - codigo: 48
+  - codigo: 60
     nombre: Cordovina
     nombreAlternativo: Clavelina
     significadoNombre: Cordovina
@@ -726,10 +653,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 49
+  - codigo: 61
     nombre: Dusis
-    nombreAlternativo: No tiene
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
     colorPulpa: Combinado
@@ -738,7 +663,7 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 50
+  - codigo: 62
     nombre: Huamantanga
     nombreAlternativo: Puka Aqu Suytu
     significadoNombre: Roja arenosa larga - Huamantanga (es un pueblo)
@@ -750,9 +675,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 51
+  - codigo: 63
     nombre: Kichka Matanka
-    nombreAlternativo: No tiene
     significadoNombre: Espina en la espalda
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Intermedio
@@ -762,9 +686,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 52
+  - codigo: 64
     nombre: Kuchipa Akan
-    nombreAlternativo: No tiene
     significadoNombre: Excremento de chancho
     colorPrincipalDeLaFlor: Morado
     toleranciaALaGranizada: Intermedio
@@ -774,9 +697,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 53
+  - codigo: 65
     nombre: Markina
-    nombreAlternativo: No tiene
     significadoNombre: Markina
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Intermedio
@@ -786,9 +708,8 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
     
-  - codigo: 54
+  - codigo: 66
     nombre: Muru Llumchuy Waqachi
-    nombreAlternativo: No tiene
     significadoNombre: Bicolor hace llorar a la nuera
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -798,9 +719,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 55
+  - codigo: 67
     nombre: Muru Wayru
-    nombreAlternativo: No tiene
     significadoNombre: Wayru bicolor
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -812,7 +732,6 @@ variedades:
     
   - codigo: 68
     nombre: Payapa Ankun
-    nombreAlternativo: No tiene
     significadoNombre: Talon de Anciana
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Intermedio
@@ -824,7 +743,6 @@ variedades:
     
   - codigo: 69
     nombre: Peruanita
-    nombreAlternativo: No tiene
     significadoNombre: Color de la bandera peruana (pequeña)
     colorPrincipalDeLaFlor: Rojo Morado
     toleranciaALaGranizada: Débil
@@ -834,10 +752,9 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 56
+  - codigo: 70
     nombre: Prescos
     nombreAlternativo: Bayo Botas, Qompis
-    significadoNombre: (No definido)
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Débil
     colorPulpa: Blanco a crema
@@ -846,9 +763,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 57
+  - codigo: 71
     nombre: Puka Botijuela
-    nombreAlternativo: No tiene
     significadoNombre: Botijuela roja
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -858,7 +774,7 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 58
+  - codigo: 72
     nombre: Puka Chiqchi Pasña
     nombreAlternativo: Puka Pasña
     significadoNombre: Señorita roja chispeada
@@ -870,9 +786,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 59
+  - codigo: 73
     nombre: Puka Wayru
-    nombreAlternativo: No tiene
     significadoNombre: Wayru rojo
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -882,9 +797,8 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
     
-  - codigo: 60
+  - codigo: 74
     nombre: Puqya
-    nombreAlternativo: No tiene
     significadoNombre: Puqya
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Fuerte
@@ -894,7 +808,7 @@ variedades:
     usoEnLaCocina: Watia, hervido
     lugar: Huancavelica
     
-  - codigo: 61
+  - codigo: 75
     nombre: Qalapa Waran
     nombreAlternativo: Waripa Tacllan
     significadoNombre: Ropa vieja- Arado de pie de joven
@@ -906,7 +820,7 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 62
+  - codigo: 76
     nombre: Qullqi Tupu
     nombreAlternativo: Yuraq Peruanita
     significadoNombre: Tupu (prendedor) de plata
@@ -918,9 +832,8 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
     
-  - codigo: 63
+  - codigo: 77
     nombre: Runtus
-    nombreAlternativo: No tiene
     significadoNombre: Huevo
     colorPrincipalDeLaFlor: Blanco
     toleranciaALaGranizada: Débil
@@ -956,7 +869,6 @@ variedades:
     
   - codigo: 80
     nombre: Trajin Waqachi
-    nombreAlternativo: No tiene
     significadoNombre: El que hace llorar al arriero
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -968,7 +880,6 @@ variedades:
     
   - codigo: 81
     nombre: Wakapa Qallun
-    nombreAlternativo: No tiene
     significadoNombre: Lengua de vaca
     colorPrincipalDeLaFlor: Rojo Morado
     toleranciaALaGranizada: Débil
@@ -992,7 +903,6 @@ variedades:
     
   - codigo: 83
     nombre: Yana Chiqchi Pasña
-    nombreAlternativo: No tiene
     significadoNombre: Señorita negra chispeada
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -1016,7 +926,6 @@ variedades:
     
   - codigo: 85
     nombre: Yana Llumchuy Waqachi
-    nombreAlternativo: No tiene
     significadoNombre: Negra hace llorar a la nuera
     colorPrincipalDeLaFlor: Lila a morada
     toleranciaALaGranizada: Débil
@@ -1086,3 +995,36 @@ variedades:
     usoEnLaCocina: Hervido
     lugar: Huancavelica
 ---
+
+<div class="thumbnail variedad col-sm-5 col-md-3 col-lg-3">
+  <img src="galeria/fotos/{{strPad codigo 3}}.png" alt="">
+  <div class="caption">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#masInfo{{codigo}}" aria-expanded="true" aria-controls="masInfo{{codigo}}" class="collapsed">
+              <h3>{{nombre}}</h3>
+            </a>
+          </h4>
+        </div>
+        <div id="masInfo{{codigo}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <table class="table table-bordered">
+            {{#each this}}
+              {{#isnt @key 'codigo'}}
+                {{#isnt @key 'nombre'}}
+                  <tr>
+                    <td class="col-sm-5 col-md-4 col-lg-4">{{humanize @key}}:</td>
+                    <td class="col-sm-7 col-md-8 col-lg-8"><strong>{{this}}</strong></td>
+                  </tr>
+                {{/isnt}}
+              {{/isnt}}
+            {{/each}}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

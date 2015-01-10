@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div id="{{page.containerId}}" class="js-isotope"
+  data-isotope-options='{
+    "columnWidth": 200,
+    "itemSelector": "{{page.itemSelector}}"
+  }'>
+  {{#eachInField page page.itemsField}}
+    {{> body}}
+  {{/eachInField}}
+  </div>
+</div>

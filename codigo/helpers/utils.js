@@ -1,6 +1,7 @@
 var gutil = require('gulp-util');
 var _ = require('lodash');
 var path = require('path');
+var humanize = require('string-humanize');
 
 module.exports.log = function(content) {
   gutil.log(content);
@@ -63,4 +64,34 @@ module.exports.firstKey = function (it) {
 
 module.exports.baseUrl = function(resourcePath) {
   return path.join('/', process.env.BASE_URL, resourcePath);
+};
+
+module.exports.eachInField = function(obj, field, options) {
+  var context = obj[field];
+  var ret = "";
+
+  for(var i=0, j=context.length; i<j; i++) {
+    ret = ret + options.fn(context[i]);
+  }
+
+  return ret;
+};
+
+module.exports.strPad = function(str, size) {
+  var s = String(str);
+  while (s.length < (size || 2)) {s = "0" + s;}
+  return s;
+};
+
+module.exports.humanize = function(str) {
+  return humanize(str);
 }
+
+// module.exports.register = function (Handlebars, options)  { 
+//   Handlebars.registerHelper('set', function (variableName, hOptions)  {
+//     var self = this;
+//     Handlebars.registerHelper(variableName, function ()  { 
+//       return hOptions.fn(self);
+//     });
+//   });
+// };

@@ -34,7 +34,8 @@
     "merge-stream": "^0.1.5",
     "minimist": "^1.1.0",
     "psi": "^0.1.2",
-    "run-sequence": "^0.3.7"
+    "run-sequence": "^0.3.7",
+    "string-humanize": "^1.0.0"
   },
   "dependencies": {
     "front-matter": "^0.2.0"
