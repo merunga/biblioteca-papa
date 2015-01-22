@@ -10,19 +10,55 @@
   });
 
   $(document).ready(function(){
-    var $container = $('#{{page.containerId}}');
+    // quick search regex
+    var qsRegex;
+
+    var filter = function() {
+      return qsRegex ? $(this).text().match( qsRegex ) : true;
+    };
+    
+    // init Isotope
+    var $container = $('#{{page.containerId}}').isotope({
+      "columnWidth": 200,
+      "itemSelector": "{{page.itemSelector}}",
+      filter: filter
+    });
+
+    // use value of search field to filter
+    var $variedadSearch = $('#variedad-search').keyup( debounce( function() {
+      qsRegex = new RegExp( $variedadSearch.val(), 'gi' );
+      $container.isotope({filter: filter});
+    }, 200 ) );
 
     $('#filter-ALL').on('click',function() {
-      $container.isotope({ filter: '*' });  
+      $('#variedad-search').val('');
+      $container.isotope({ filter: filter });  
     });
 
     {{#each page.filterBy}}
       {{#eachCollectFieldValue ../page.variedades this}}
       $('{{slugifyEach this (concat "#filter-" ../this "-") }}').on('click',function() {
-        console.log("{{slugifyEach this (concat "#filter-" ../this "-") }}")
+        $('#variedad-search').val('');
         $container.isotope({ filter: '.{{concat ../this "-" (slugify this)}}' });  
       });
       {{/eachCollectFieldValue}}
     {{/each}}
+
+    
   });
+
+  // debounce so filtering doesn't happen every millisecond
+  function debounce( fn, threshold ) {
+    var timeout;
+    return function debounced() {
+      if ( timeout ) {
+        clearTimeout( timeout );
+      }
+      function delayed() {
+        fn();
+        timeout = null;
+      }
+      timeout = setTimeout( delayed, threshold || 100 );
+    }
+  }
 </script>
