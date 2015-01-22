@@ -1,0 +1,28 @@
+<script type="text/javascript">
+  $(window).load(function(){
+    $container = $('#{{page.containerId}}');
+    $('.panel-collapse').on('shown.bs.collapse', function () {
+      $container.isotope('layout')
+    });
+    $('.panel-collapse').on('hidden.bs.collapse', function () {
+      $container.isotope('layout')
+    }); 
+  });
+
+  $(document).ready(function(){
+    var $container = $('#{{page.containerId}}');
+
+    $('#filter-ALL').on('click',function() {
+      $container.isotope({ filter: '*' });  
+    });
+
+    {{#each page.filterBy}}
+      {{#eachCollectFieldValue ../page.variedades this}}
+      $('{{slugifyEach this (concat "#filter-" ../this "-") }}').on('click',function() {
+        console.log("{{slugifyEach this (concat "#filter-" ../this "-") }}")
+        $container.isotope({ filter: '.{{concat ../this "-" (slugify this)}}' });  
+      });
+      {{/eachCollectFieldValue}}
+    {{/each}}
+  });
+</script>

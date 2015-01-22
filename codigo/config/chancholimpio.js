@@ -521,8 +521,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
             req.url = uri.pathname + '.html' + (uri.search || '');
           }
           cb();
-        },
-        browser: "google chrome"
+        }
       }
     });
   };

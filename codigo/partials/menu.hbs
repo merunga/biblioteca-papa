@@ -1,26 +1,28 @@
 {{#each this}}
-  {{#isntEmpty this }}
-    {{#isnt @key 'title'}}
-      {{#isnt @key 'index'}}
-        {{#isnt @key '.'}}
-          <li>
-            {{#if isPage}}
-              <a href="{{absolutePath}}">{{title}}</a>
-            {{else}}
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                role="button" aria-expanded="false">{{title}}</a>
-              <ul class="dropdown-menu" role="menu">
-                {{> menu this}}
-              </ul>
-            {{/if}}
-          </li>
+  {{#unless excludeFromMenu}}
+    {{#isntEmpty this }}
+      {{#isnt @key 'title'}}
+        {{#isnt @key 'index'}}
+          {{#isnt @key '.'}}
+            <li>
+              {{#if isPage}}
+                {{> navbar-link}}
+              {{else}}
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  role="button" aria-expanded="false">{{title}}</a>
+                <ul class="dropdown-menu" role="menu">
+                  {{> menu this}}
+                </ul>
+              {{/if}}
+            </li>
+          {{else}}
+            {{> menu this}}
+          {{/isnt}}
         {{else}}
-          {{> menu this}}
+          <li>{{> navbar-link}}</li>
+          <li class="divider"></li>
         {{/isnt}}
-      {{else}}
-        <li><a href="{{absolutePath}}">{{title}}</a></li>
-        <li class="divider"></li>
       {{/isnt}}
-    {{/isnt}}
-  {{/isntEmpty}}
+    {{/isntEmpty}}
+  {{/unless}}
 {{/each}}

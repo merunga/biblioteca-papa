@@ -7,29 +7,44 @@ module.exports.log = function(content) {
   gutil.log(content);
 };
 
-module.exports.slugify = function(str) {
+function slugify(str) {
   // https://gist.github.com/mathewbyrne/1280286
   // http://foros.cristalab.com/reemplazar-tildes-y-n-con-jquery-t108615/
-  return str.toString().toLowerCase()
-    .replace(/[áàäâå]/, 'a')
-    .replace(/[éèëê]/, 'e')
-    .replace(/[íìïî]/, 'i')
-    .replace(/[óòöô]/, 'o')
-    .replace(/[úùüû]/, 'u')
-    .replace(/[ýÿ]/, 'y')
-    .replace(/[ç]/, 'c')
-    .replace(/[ñ]/, 'n')
-    // .replace(/['"]/, '')
-    // .replace(/[^a-zA-Z0-9-]/, '')
-    .replace(/\s+/, '-')
-    .replace(/' '/, '-')
-    .replace(/(_)$/, '')
-    .replace(/^(_)/, '')
-    .replace(/\s+/g, '-')           // Replace spaces with -
-    .replace(/[^\w\-\']+/g, '')     // Remove all non-word chars
-    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
-    .replace(/^-+/, '')             // Trim - from start of text
-    .replace(/-+$/, '');            // Trim - from end of text
+  if(str) {
+    return str.toString().toLowerCase()
+      .replace(/[áàäâå]/, 'a')
+      .replace(/[éèëê]/, 'e')
+      .replace(/[íìïî]/, 'i')
+      .replace(/[óòöô]/, 'o')
+      .replace(/[úùüû]/, 'u')
+      .replace(/[ýÿ]/, 'y')
+      .replace(/[ç]/, 'c')
+      .replace(/[ñ]/, 'n')
+      // .replace(/['"]/, '')
+      // .replace(/[^a-zA-Z0-9-]/, '')
+      .replace(/\s+/, '-')
+      .replace(/' '/, '-')
+      .replace(/(_)$/, '')
+      .replace(/^(_)/, '')
+      .replace(/\s+/g, '-')           // Replace spaces with -
+      .replace(/[^\w\-\']+/g, '')     // Remove all non-word chars
+      .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+      .replace(/^-+/, '')             // Trim - from start of text
+      .replace(/-+$/, '');            // Trim - from end of text
+  }
+  return str;
+};
+
+module.exports.slugify = slugify;
+
+module.exports.slugifyEach = function(str, prefix) {
+  prefix = prefix || '';
+  if(str) {
+    return _.collect(str.split(','), function(str2) {
+      return prefix + slugify(str2)
+    }).join(' ');  
+  }
+  return str;  
 };
 
 module.exports.relative = function(from, to) {
@@ -77,6 +92,26 @@ module.exports.eachInField = function(obj, field, options) {
   return ret;
 };
 
+module.exports.eachCollectFieldValue = function(obj, field, options) {
+  var values = _.uniq(_.collect(obj, function(it) { return it[field]; }));
+  var ret = "";
+
+  for(var i=0, j=values.length; i<j; i++) {
+    ret = ret + options.fn(values[i]);
+  }
+
+  return ret;
+};
+
+module.exports.concat = function(a, b, c) {
+  // if (arguments.length === 0) {
+  //   return "";
+  // } else {
+  //   return Array.prototype.slice.call(arguments).join(" ");
+  // }
+  return a + b + c;
+};
+
 module.exports.strPad = function(str, size) {
   var s = String(str);
   while (s.length < (size || 2)) {s = "0" + s;}
@@ -85,7 +120,11 @@ module.exports.strPad = function(str, size) {
 
 module.exports.humanize = function(str) {
   return humanize(str);
-}
+};
+
+// module.exports.extend = function(one, other) {
+//   return _.extend({}, other, one);
+// };
 
 // module.exports.register = function (Handlebars, options)  { 
 //   Handlebars.registerHelper('set', function (variableName, hOptions)  {

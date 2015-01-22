@@ -1,0 +1,33 @@
+<div class="thumbnail variedad col-sm-5 col-md-3 col-lg-3
+    {{slugifyEach lugar "lugar-"}}">
+  <img src="fotos/{{strPad codigo 3}}.png" alt="">
+  <div class="caption">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#masInfo{{codigo}}" aria-expanded="true" aria-controls="masInfo{{codigo}}" class="collapsed">
+              <h3>{{nombre}} <small>({{lugar}})</small></h3>
+            </a>
+          </h4>
+        </div>
+        <div id="masInfo{{codigo}}" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <table class="table table-bordered">
+            {{#each this}}
+              {{#isnt @key 'codigo'}}
+                {{#isnt @key 'nombre'}}
+                  <tr>
+                    <td class="col-sm-5 col-md-4 col-lg-4">{{humanize @key}}:</td>
+                    <td class="col-sm-7 col-md-8 col-lg-8"><strong>{{this}}</strong></td>
+                  </tr>
+                {{/isnt}}
+              {{/isnt}}
+            {{/each}}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
