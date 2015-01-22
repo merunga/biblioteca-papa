@@ -12,6 +12,7 @@ layout: default
 
     <input type="text" id="variedad-search" placeholder="Buscar" />
 
+    <b>{{this}}</b>
   {{#eachCollectFieldValue ../page.variedades this}}
     <button id="{{slugifyEach this (concat "filter-" ../this "-") }}">
       {{humanize this}}
