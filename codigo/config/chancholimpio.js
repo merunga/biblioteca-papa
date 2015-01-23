@@ -201,8 +201,8 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         paths.content.self,
         'origen/historia/imagenes/**.jpg'
       ))
-      .pipe($.cache($.gm(function (gmfile) {
-        return gmfile.resize(1280, null, '<');
+      .pipe($.cache($.gm(function (gmfile, done) {
+        return done(null, gmfile.resize(1280, null, '<'));
       })))
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
@@ -217,12 +217,12 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         paths.content.self,
         'origen/historia/imagenes/**.{png,jpg}'
       ))
-      .pipe($.gm(function (gmfile) {
+      .pipe($.gm(function (gmfile, done) {
         var destPath = gmfile.source.replace('.jpg','_thumb.jpg');
         destPath = destPath.replace(path.join(rootDir,paths.content.self), DEST);
-        return gmfile.thumb(40, 40, destPath, 100, function() {
+        return done(null, gmfile.thumb(40, 40, destPath, 100, function() {
 
-        });
+        }));
       }))
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
