@@ -15,8 +15,8 @@ var opt = {
   paths: {
     content: {
       self: 'contenido',
-      files: 'descargas/**',
-      images: '**/*.{jpg,png,svg}',
+      files: '**/*.{pdf,zip,json,css,js}',
+      images: '**/*.{jpg,png,svg,gif}',
       pages: '**/*.{hbs,md}'
     },
     code: {

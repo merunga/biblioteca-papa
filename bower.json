@@ -6,6 +6,7 @@
     "modernizr": "~2.8.3",
     "bootstrap": "~3.3.1",
     "photoswipe": "~4.0.3",
-    "isotope": "~2.1.0"
+    "isotope": "~2.1.0",
+    "timeline.js": "~2.35.2"
   }
 }

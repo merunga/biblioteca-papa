@@ -24,7 +24,7 @@ var defaultPaths = {
   content: {
     self: 'content',
     files: 'files/**',
-    images: 'images/*.{jpg,png,svg}',
+    images: 'images/*.{jpg,png,svg,gif}',
     pages: 'pages/**/*'
   },
   code: {
@@ -146,11 +146,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
   gulp.task('files', function () {
     src.files = path.join(paths.content.self, paths.content.files);
     return gulp.src(src.files)
-      .pipe(gulp.dest(path.join(
-        DEST,
-        '/',
-        paths.content.files
-      )))
+      .pipe(gulp.dest(DEST))
       .pipe($.if(watch, reload({stream: true})))
   });
 
@@ -496,7 +492,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
   // Build
   gulp.task('build', ['clean'], function (cb) {
-    runSequence(['images', 'vendor', 'webroot', 'fonts', 'pages', 'styles', 'scripts'], cb);
+    runSequence(['files','images', 'vendor', 'webroot', 'fonts', 'pages', 'styles', 'scripts'], cb);
   });
 
   function serve() {
