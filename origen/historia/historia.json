@@ -3,11 +3,9 @@
   {
     "headline":"La Historia de la Papa",
     "type":"default",
-    "text":"<p><p>Descripcion de la linea de tiempo en general</p></p>",
+    "text":"<p></p>",
     "asset": {
-      "media":"imagenes/http://yourdomain_or_socialmedialink_goes_here.jpg.jpg",
-      "credit":"Credit Name Goes Here",
-      "caption":"Caption text goes here"
+      "media":"imagenes/000-flores-de-papa.jpg"
     },
     "date": [  
       {  
@@ -18,6 +16,7 @@
         "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/001-flores-de-papa.jpg",
+          "thumbnail":"imagenes/001-flores-de-papa_thumb.jpg",
           "caption":"Flores de papa"
         }
       },
@@ -29,6 +28,7 @@
         "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/002-domesticacion.jpg",
+          "thumbnail":"imagenes/002-domesticacion_thumb.jpg",
           "caption":"Domesticacion"
         }
       },
@@ -40,6 +40,7 @@
         "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/003-mapa-america.jpg",
+          "thumbnail":"imagenes/003-mapa-america_thumb.jpg",
           "caption":"Mapa de America"
         }
       },
@@ -48,9 +49,10 @@
         "endDate":"-10000",
         "headline":"La diversidad de  las especies silvestres",
         "text":"<p></p>",
-        "tag":"Especies silvestres de papas",
+        "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/004-altitudes-silvestres.jpg",
+          "thumbnail":"imagenes/004-altitudes-silvestres_thumb.jpg",
           "caption":"Altitudes silvestres"
         }
       },
@@ -59,9 +61,10 @@
         "endDate":"-10000",
         "headline":"La diversidad de  las especies silvestres",
         "text":"<p>En diferentes hábitats de las Américas se han encontrado 187 especies silvestres de papa (Solanum spp.), desde los 4000 metros sobre el nivel del mar hasta las áreas desérticas costeras.</p>",
-        "tag":"Especies silvestres de papas",
+        "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/005-especies-silvestres.jpg",
+          "thumbnail":"imagenes/005-especies-silvestres_thumb.jpg",
           "caption":"Especies silvestres"
         }
       },
@@ -70,9 +73,10 @@
         "endDate":"-10000",
         "headline":"El primer ancestro de la papa",
         "text":"<p>Dentro del complejo Solanum brevicaule, la especie silvestre Solanum bukasovii probablemente dio lugar a la primera papa cultivada, Solanum stenotomum, hace 7000 años en el área del lago Titicaca.</p>",
-        "tag":"Especies silvestres de papas",
+        "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/006-solanum.jpg",
+          "thumbnail":"imagenes/006-solanum_thumb.jpg",
           "caption":"Solanum"
         }
       },
@@ -81,9 +85,10 @@
         "endDate":"-10000",
         "headline":"El primer ancestro de la papa",
         "text":"<p>La muestra del especimen característico de Solanum bukasovii se encontró en el departamento de Junín (actualmente Pasco), en la localidad de Yanamachay, cerca de la ciudad de Cerro de Pasco, Perú, en la orilla de un arroyo, entre rocas y a lo largo de los bordes de las áreas cultivadas. (7 de marzo, 1927, S. Juzepczuk 10605).</p>",
-        "tag":"Especies silvestres de papas",
+        "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/007-junin.jpg",
+          "thumbnail":"imagenes/007-junin_thumb.jpg",
           "caption":"Junín"
         }
       },
@@ -92,9 +97,10 @@
         "endDate":"-10000",
         "headline":"El primer ancestro de la papa",
         "text":"<p>Existe mucha variación en las especies a lo largo de su rango de distribución, como se aprecia en estos ejemplos.</p>",
-        "tag":"Especies silvestres de papas",
+        "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/008-mapa-peru.jpg",
+          "thumbnail":"imagenes/008-mapa-peru_thumb.jpg",
           "caption":"Mapa del Perú"
         }
       },
@@ -103,9 +109,10 @@
         "endDate":"-10000",
         "headline":"Variaciones",
         "text":"<p></p>",
-        "tag":"Especies silvestres de papas",
+        "tag":"Los orígenes",
         "asset": {
           "media":"imagenes/009-variaciones.jpg",
+          "thumbnail":"imagenes/009-variaciones_thumb.jpg",
           "caption":"Variaciones"
         }
       },
@@ -117,6 +124,7 @@
         "tag":"Domesticación y evolución de la papa",
         "asset": {
           "media":"imagenes/010-domesticacion-1.jpg",
+          "thumbnail":"imagenes/010-domesticacion-1_thumb.jpg",
           "caption":"Domesticación"
         }
       },
@@ -128,6 +136,7 @@
         "tag":"Domesticación y evolución de la papa",
         "asset": {
           "media":"imagenes/010-domesticacion-1.jpg",
+          "thumbnail":"imagenes/010-domesticacion-1_thumb.jpg",
           "caption":"Domesticación"
         }
       },
@@ -139,6 +148,7 @@
         "tag":"Domesticación y evolución de la papa",
         "asset": {
           "media":"imagenes/010-domesticacion-1.jpg",
+          "thumbnail":"imagenes/010-domesticacion-1_thumb.jpg",
           "caption":"Domesticación"
         }
       },
@@ -150,6 +160,7 @@
         "tag":"Domesticación y evolución de la papa",
         "asset": {
           "media":"imagenes/011-papas-amargas.jpg",
+          "thumbnail":"imagenes/011-papas-amargas_thumb.jpg",
           "caption":"Papas Amargas"
         }
       },
@@ -161,6 +172,7 @@
         "tag":"Domesticación y evolución de la papa",
         "asset": {
           "media":"imagenes/012-expansion.jpg",
+          "thumbnail":"imagenes/012-expansion_thumb.jpg",
           "caption":"Expansión"
         }
       },
@@ -172,6 +184,7 @@
         "tag":"Domesticación y evolución de la papa",
         "asset": {
           "media":"imagenes/013-formativo-tardio.jpg",
+          "thumbnail":"imagenes/013-formativo-tardio_thumb.jpg",
           "caption":"Formativo tardío"
         }
       },
@@ -183,6 +196,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/014-culturas-precolombinas.jpg",
+          "thumbnail":"imagenes/014-culturas-precolombinas_thumb.jpg",
           "caption":"Culturas precolombinas"
         }
       },
@@ -194,6 +208,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/014-culturas-precolombinas.jpg",
+          "thumbnail":"imagenes/014-culturas-precolombinas_thumb.jpg",
           "caption":"Culturas precolombinas"
         }
       },
@@ -205,6 +220,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/014-culturas-precolombinas.jpg",
+          "thumbnail":"imagenes/014-culturas-precolombinas_thumb.jpg",
           "caption":"Culturas precolombinas"
         }
       },
@@ -216,6 +232,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/015-qhachun.jpg",
+          "thumbnail":"imagenes/015-qhachun_thumb.jpg",
           "caption":"Llunchuy qhachun waqachi"
         }
       },
@@ -227,6 +244,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/016-moraya.jpg",
+          "thumbnail":"imagenes/016-moraya_thumb.jpg",
           "caption":"Moraya"
         }
       },
@@ -238,6 +256,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/017-siembra.jpg",
+          "thumbnail":"imagenes/017-siembra_thumb.jpg",
           "caption":"Siembra"
         }
       },
@@ -249,6 +268,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/018-guaman-poma.jpg",
+          "thumbnail":"imagenes/018-guaman-poma_thumb.jpg",
           "caption":"Dibujos de \"Nueva Crónica y Buen Gobierno\""
         }
       },
@@ -260,6 +280,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/012-expansion.jpg",
+          "thumbnail":"imagenes/012-expansion_thumb.jpg",
           "caption":"Expansión"
         }
       },
@@ -271,6 +292,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/019-ceramicas.jpg",
+          "thumbnail":"imagenes/019-ceramicas_thumb.jpg",
           "caption":"Cerámicas"
         }
       },
@@ -282,6 +304,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/019-ceramicas.jpg",
+          "thumbnail":"imagenes/019-ceramicas_thumb.jpg",
           "caption":"Cerámicas"
         }
       },
@@ -293,6 +316,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/019-ceramicas.jpg",
+          "thumbnail":"imagenes/019-ceramicas_thumb.jpg",
           "caption":"Cerámicas"
         }
       },
@@ -304,6 +328,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/019-ceramicas.jpg",
+          "thumbnail":"imagenes/019-ceramicas_thumb.jpg",
           "caption":"Cerámicas"
         }
       },
@@ -314,6 +339,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/020-atahuallpa.jpg",
+          "thumbnail":"imagenes/020-atahuallpa_thumb.jpg",
           "caption":"Atahuallpa"
         }
       },
@@ -324,6 +350,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/020-atahuallpa.jpg",
+          "thumbnail":"imagenes/020-atahuallpa_thumb.jpg",
           "caption":"Atahuallpa"
         }
       },
@@ -334,6 +361,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/012-expansion.jpg",
+          "thumbnail":"imagenes/012-expansion_thumb.jpg",
           "caption":"Expansión"
         }
       },
@@ -344,6 +372,7 @@
         "tag":"La papa en las culturas precolombinas",
         "asset": {
           "media":"imagenes/012-expansion.jpg",
+          "thumbnail":"imagenes/012-expansion_thumb.jpg",
           "caption":"Expansión"
         }
       },
@@ -354,6 +383,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/021-descubrimiento.jpg",
+          "thumbnail":"imagenes/021-descubrimiento_thumb.jpg",
           "caption":"Descubrimiento"
         }
       },
@@ -364,6 +394,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/022-quesada.jpg",
+          "thumbnail":"imagenes/022-quesada_thumb.jpg",
           "caption":"Jiménez de Quesada"
         }
       },
@@ -374,6 +405,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/022-quesada.jpg",
+          "thumbnail":"imagenes/022-quesada_thumb.jpg",
           "caption":"Jiménez de Quesada"
         }
       },
@@ -408,6 +440,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/023-cieza.jpg",
+          "thumbnail":"imagenes/023-cieza_thumb.jpg",
           "caption":"Cieza"
         }
       },
@@ -430,6 +463,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/024-drake.jpg",
+          "thumbnail":"imagenes/024-drake_thumb.jpg",
           "caption":"Drake"
         }
       },
@@ -440,6 +474,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/025-hospital.jpg",
+          "thumbnail":"imagenes/025-hospital_thumb.jpg",
           "caption":"Hospital de la Sangre"
         }
       },
@@ -450,6 +485,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/025-hospital.jpg",
+          "thumbnail":"imagenes/025-hospital_thumb.jpg",
           "caption":"Hospital de la Sangre"
         }
       },
@@ -466,6 +502,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/026-fondo.jpg",
+          "thumbnail":"imagenes/026-fondo_thumb.jpg",
           "caption":"Fondo"
         }
       },
@@ -476,6 +513,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/026-fondo.jpg",
+          "thumbnail":"imagenes/026-fondo_thumb.jpg",
           "caption":"Fondo"
         }
       },
@@ -486,6 +524,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/026-fondo.jpg",
+          "thumbnail":"imagenes/026-fondo_thumb.jpg",
           "caption":"Fondo"
         }
       },
@@ -502,6 +541,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/027-clusius.jpg",
+          "thumbnail":"imagenes/027-clusius_thumb.jpg",
           "caption":"Clusius"
         }
       },
@@ -512,6 +552,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/028-british.jpg",
+          "thumbnail":"imagenes/028-british_thumb.jpg",
           "caption":"British"
         }
       },
@@ -522,6 +563,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/029-jhon.jpg",
+          "thumbnail":"imagenes/029-jhon_thumb.jpg",
           "caption":"Jhon"
         }
       },
@@ -532,6 +574,7 @@
         "tag":"El descubrimiento europeo",
         "asset": {
           "media":"imagenes/030-ilustracion-de-papa.jpg",
+          "thumbnail":"imagenes/030-ilustracion-de-papa_thumb.jpg",
           "caption":"ilustración de papa"
         }
       },
@@ -548,6 +591,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/031-expansion-mundial.jpg",
+          "thumbnail":"imagenes/031-expansion-mundial_thumb.jpg",
           "caption":"Expansión mundial"
         }
       },
@@ -558,6 +602,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/035-nueva-escocia.jpg",
+          "thumbnail":"imagenes/035-nueva-escocia_thumb.jpg",
           "caption":"Nueva Escocia"
         }
       },
@@ -568,6 +613,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/032-cruzados.jpg",
+          "thumbnail":"imagenes/032-cruzados_thumb.jpg",
           "caption":"Cruzados"
         }
       },
@@ -578,6 +624,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/036-india.jpg",
+          "thumbnail":"imagenes/036-india_thumb.jpg",
           "caption":"India"
         }
       },
@@ -588,6 +635,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/033-rey-jan.jpg",
+          "thumbnail":"imagenes/033-rey-jan_thumb.jpg",
           "caption":"Rey Jan"
         }
       },
@@ -598,6 +646,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/034-linnaeus.jpg",
+          "thumbnail":"imagenes/034-linnaeus_thumb.jpg",
           "caption":"Linnaeus"
         }
       },
@@ -620,6 +669,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/038-parmentier.jpg",
+          "thumbnail":"imagenes/038-parmentier_thumb.jpg",
           "caption":"Parmentier"
         }
       },
@@ -630,6 +680,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/039-bohemia.jpg",
+          "thumbnail":"imagenes/039-bohemia_thumb.jpg",
           "caption":"Bohemia"
         }
       },
@@ -640,6 +691,7 @@
         "tag":"La expansión de la papa más allá de Europa",
         "asset": {
           "media":"imagenes/040-jefferson.jpg",
+          "thumbnail":"imagenes/040-jefferson_thumb.jpg",
           "caption":"Jefferson"
         }
       },
@@ -650,6 +702,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/041-tizon.jpg",
+          "thumbnail":"imagenes/041-tizon_thumb.jpg",
           "caption":"Tizón"
         }
       },
@@ -660,6 +713,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/041-tizon.jpg",
+          "thumbnail":"imagenes/041-tizon_thumb.jpg",
           "caption":"Tizón"
         }
       },
@@ -670,6 +724,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/041-tizon.jpg",
+          "thumbnail":"imagenes/041-tizon_thumb.jpg",
           "caption":"Tizón"
         }
       },
@@ -680,6 +735,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/042-herbario.jpg",
+          "thumbnail":"imagenes/042-herbario_thumb.jpg",
           "caption":"Herbario"
         }
       },
@@ -690,6 +746,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/043-llegada-tizon.jpg",
+          "thumbnail":"imagenes/043-llegada-tizon_thumb.jpg",
           "caption":"La llegada del tizón"
         }
       },
@@ -700,6 +757,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/044-zar.jpg",
+          "thumbnail":"imagenes/044-zar_thumb.jpg",
           "caption":"Zar"
         }
       },
@@ -710,6 +768,7 @@
         "tag":"El tizón tardio de la papa",
         "asset": {
           "media":"imagenes/045-hongo.jpg",
+          "thumbnail":"imagenes/045-hongo_thumb.jpg",
           "caption":"Hongo"
         }
       },
@@ -720,6 +779,7 @@
         "tag":"La edad moderna",
         "asset": {
           "media":"imagenes/049-los-comedores-de-papas.jpg",
+          "thumbnail":"imagenes/049-los-comedores-de-papas_thumb.jpg",
           "caption":"Los comedores de papas"
         }
       },
@@ -730,6 +790,7 @@
         "tag":"La edad moderna",
         "asset": {
           "media":"imagenes/046-europeos.jpg",
+          "thumbnail":"imagenes/046-europeos_thumb.jpg",
           "caption":"Europeos"
         }
       },
@@ -740,6 +801,7 @@
         "tag":"La edad moderna",
         "asset": {
           "media":"imagenes/047-densidad-de-papas.jpg",
+          "thumbnail":"imagenes/047-densidad-de-papas_thumb.jpg",
           "caption":"Densidad de papas"
         }
       },
@@ -757,6 +819,7 @@
         "tag":"La edad moderna",
         "asset": {
           "media":"imagenes/048-coma-papas.jpg",
+          "thumbnail":"imagenes/048-coma-papas_thumb.jpg",
           "caption":"Coma papas"
         }
       },
@@ -767,6 +830,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/050-gratitud.jpg",
+          "thumbnail":"imagenes/050-gratitud_thumb.jpg",
           "caption":"Gratitud"
         }
       },
@@ -777,6 +841,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/050-gratitud.jpg",
+          "thumbnail":"imagenes/050-gratitud_thumb.jpg",
           "caption":"Gratitud"
         }
       },
@@ -787,6 +852,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/050-gratitud.jpg",
+          "thumbnail":"imagenes/050-gratitud_thumb.jpg",
           "caption":"Gratitud"
         }
       },
@@ -797,6 +863,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/051-logo-cip.jpg",
+          "thumbnail":"imagenes/051-logo-cip_thumb.jpg",
           "caption":"Logo CIP"
         }
       },
@@ -807,6 +874,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/052-expansion-mundial.jpg",
+          "thumbnail":"imagenes/052-expansion-mundial_thumb.jpg",
           "caption":"Expansión'mundial"
         }
       },
@@ -817,6 +885,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/053-complejo-cip.jpg",
+          "thumbnail":"imagenes/053-complejo-cip_thumb.jpg",
           "caption":"Complejo CIP"
         }
       },
@@ -827,6 +896,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/054-parque-papa.jpg",
+          "thumbnail":"imagenes/054-parque-papa_thumb.jpg",
           "caption":"Parque de la Papa"
         }
       },
@@ -837,6 +907,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/055-consumo-mundial.jpg",
+          "thumbnail":"imagenes/055-consumo-mundial_thumb.jpg",
           "caption":"Consumo mundial"
         }
       },
@@ -847,6 +918,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/056-tika-papa.jpg",
+          "thumbnail":"imagenes/056-tika-papa_thumb.jpg",
           "caption":"Tika papa"
         }
       },
@@ -857,6 +929,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/057-dia-papa.jpg",
+          "thumbnail":"imagenes/057-dia-papa_thumb.jpg",
           "caption":"Año Internacional de la Papa"
           }
       },
@@ -867,6 +940,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/058-comercial.jpg",
+          "thumbnail":"imagenes/058-comercial_thumb.jpg",
           "caption":"Comercial"
         }
       },
@@ -877,6 +951,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/059-alimentacion.jpg",
+          "thumbnail":"imagenes/059-alimentacion_thumb.jpg",
           "caption":"Alimentación"
         }
       },
@@ -887,6 +962,7 @@
         "tag":"El legado de los mejoradores originales",
         "asset": {
           "media":"imagenes/060-chirapaq.jpg",
+          "thumbnail":"imagenes/060-chirapaq_thumb.jpg",
           "caption":"Chirapaq"
         }
       }
