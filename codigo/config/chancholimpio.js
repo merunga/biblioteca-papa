@@ -195,7 +195,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       //.pipe($.if(watch, reload({stream: true})));
   });
 
-  gulp.task('resize-images', ['content-images'], function () {
+  gulp.task('resize-images', ['thumb-images'], function () {
     gulp.src(path.join(
         rootDir,
         paths.content.self,
@@ -211,16 +211,19 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       .pipe(gulp.dest(path.join(DEST,'origen/historia/imagenes/')));
   });
 
-  gulp.task('thumb-images', function () {
-    console.log(path.join(DEST,'origen/historia/imagenes/'))
+  gulp.task('thumb-images', ['content-images'], function () {
     gulp.src(path.join(
         rootDir,
         paths.content.self,
-        'origen/historia/imagenes/**.jpg'
+        'origen/historia/imagenes/**.{png,jpg}'
       ))
-      .pipe($.cache($.gm(function (gmfile) {
-        return gmfile.thumb(40, 40);
-      })))
+      .pipe($.gm(function (gmfile) {
+        var destPath = gmfile.source.replace('.jpg','_thumb.jpg');
+        destPath = destPath.replace(path.join(rootDir,paths.content.self), DEST);
+        return gmfile.thumb(40, 40, destPath, 100, function() {
+
+        });
+      }))
       .pipe($.if(RELEASE, $.cache($.imagemin({
         progressive: true,
         interlaced: true
