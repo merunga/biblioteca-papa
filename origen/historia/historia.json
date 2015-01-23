@@ -1,0 +1,895 @@
+{
+  "timeline":
+  {
+    "headline":"La Historia de la Papa",
+    "type":"default",
+    "text":"<p><p>Descripcion de la linea de tiempo en general</p></p>",
+    "asset": {
+      "media":"imagenes/http://yourdomain_or_socialmedialink_goes_here.jpg.jpg",
+      "credit":"Credit Name Goes Here",
+      "caption":"Caption text goes here"
+    },
+    "date": [  
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"Los orígenes",
+        "text":"<p>La biodiversidad de la papa expresada a través de sus flores. </p>",
+        "tag":"Los orígenes",
+        "asset": {
+          "media":"imagenes/001-flores-de-papa.jpg",
+          "caption":"Flores de papa"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"Los orígenes",
+        "text":"<p>Papa silvestre (derecha) y domesticada (izquierda), efectos comparados de 7000 años de domesticación y mejoramiento.</p>",
+        "tag":"Los orígenes",
+        "asset": {
+          "media":"imagenes/002-domesticacion.jpg",
+          "caption":"Domesticacion"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"Los orígenes",
+        "text":"<p>La papa domesticada se originó cerca del lago Titicaca hace 8000 - 7000 años AC. </p>",
+        "tag":"Los orígenes",
+        "asset": {
+          "media":"imagenes/003-mapa-america.jpg",
+          "caption":"Mapa de America"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"La diversidad de  las especies silvestres",
+        "text":"<p></p>",
+        "tag":"Especies silvestres de papas",
+        "asset": {
+          "media":"imagenes/004-altitudes-silvestres.jpg",
+          "caption":"Altitudes silvestres"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"",
+        "text":"<p>En diferentes hábitats de las Américas se han encontrado 187 especies silvestres de papa (Solanum spp.), desde los 4000 metros sobre el nivel del mar hasta las áreas desérticas costeras.</p>",
+        "tag":"Especies silvestres de papas",
+        "asset": {
+          "media":"imagenes/005-especies-silvestres.jpg",
+          "caption":"Especies silvestres"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"El primer ancestro de la papa",
+        "text":"<p>Dentro del complejo Solanum brevicaule, la especie silvestre Solanum bukasovii probablemente dio lugar a la primera papa cultivada, Solanum stenotomum, hace 7000 años en el área del lago Titicaca.</p>",
+        "tag":"Especies silvestres de papas",
+        "asset": {
+          "media":"imagenes/006-solanum.jpg",
+          "caption":"Solanum"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"",
+        "text":"<p>La muestra del especimen característico de Solanum bukasovii se encontró en el departamento de Junín (actualmente Pasco), en la localidad de Yanamachay, cerca de la ciudad de Cerro de Pasco, Perú, en la orilla de un arroyo, entre rocas y a lo largo de los bordes de las áreas cultivadas. (7 de marzo, 1927, S. Juzepczuk 10605).</p>",
+        "tag":"Especies silvestres de papas",
+        "asset": {
+          "media":"imagenes/007-junin.jpg",
+          "caption":"Junín"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"",
+        "text":"<p>Existe mucha variación en las especies a lo largo de su rango de distribución, como se aprecia en estos ejemplos.</p>",
+        "tag":"Especies silvestres de papas",
+        "asset": {
+          "media":"imagenes/008-mapa-peru.jpg",
+          "caption":"Mapa del Perú"
+        }
+      },
+      {  
+        "startDate":"-30000",
+        "endDate":"-10000",
+        "headline":"",
+        "text":"<p></p>",
+        "tag":"Especies silvestres de papas",
+        "asset": {
+          "media":"imagenes/009-variaciones.jpg",
+          "caption":"Variaciones"
+        }
+      },
+      {  
+        "startDate":"-10000",
+        "endDate":"-2000",
+        "headline":"Domesticación y evolución de la papa",
+        "text":"<p>La domesticación de la papa (Solanum spp) probablemente comenzó hace unos diez mil años en los alrededores del lago Titicaca (en los actuales territorios de Perú y Bolivia), cuando los primeros habitantes de esa región comenzaron a seleccionar formas comestibles de las especies silvestres de papa. Las especies silvestres eventualmente se cruzaron entre sí y produjeron cada vez mejores variedades.</p>",
+        "tag":"Domesticación y evolución de la papa",
+        "asset": {
+          "media":"imagenes/010-domesticacion-1.jpg",
+          "caption":"Domesticación"
+        }
+      },
+      {  
+        "startDate":"-10000",
+        "endDate":"-2000",
+        "headline":"",
+        "text":"<p>La papa moderna (Solanum tuberosum) aparentemente fue domesticada hace unos siete mil años a partir de especies silvestres de papa del complejo Solanum brevicaule. Sin embargo, la aparición de las comunidades agrícolas, en ésta y otras regiones de Sudamérica, solamente ocurrió hace 3800 años, en los inicios del periodo formativo.</p>",
+        "tag":"Domesticación y evolución de la papa",
+        "asset": {
+          "media":"imagenes/010-domesticacion-1.jpg",
+          "caption":"Domesticación"
+        }
+      },
+      {  
+        "startDate":"-10000",
+        "endDate":"-2000",
+        "headline":"",
+        "text":"<p>Los cazadores-recolectores en la región del lago Titicaca, tales como los de Viscachani, comenzaron la selección de papas comestibles y más productivas probablemente en los periodos del Paleolítico tardío y el Arcaico temprano. </p>",
+        "tag":"Domesticación y evolución de la papa",
+        "asset": {
+          "media":"imagenes/010-domesticacion-1.jpg",
+          "caption":"Domesticación"
+        }
+      },
+      {  
+        "startDate":"-2000",
+        "endDate":"-1800",
+        "headline":"",
+        "text":"<p>Se encontraron papas amargas procedentes de zonas muy altas en Pachamachay, cerca de Junín, que datan del periodo Arcaico tardío. </p>",
+        "tag":"Domesticación y evolución de la papa",
+        "asset": {
+          "media":"imagenes/011-papas-amargas.jpg",
+          "caption":"Papas Amargas"
+        }
+      },
+      {  
+        "startDate":"-1800",
+        "endDate":"-1200",
+        "headline":"",
+        "text":"<p>Las culturas peruanas y bolivianas de Qaluyo, Tiwanaku y Chiripa fueron las primeras que cultivaron papas en el periodo formativo temprano.</p>",
+        "tag":"Domesticación y evolución de la papa",
+        "asset": {
+          "media":"imagenes/012-expansion.jpg",
+          "caption":"Expansión"
+        }
+      },
+      {  
+        "startDate":"-300",
+        "endDate":"100",
+        "headline":"",
+        "text":"<p>Las papas ya eran ampliamente cultivadas en las tierras altas de Ecuador y Colombia en el formativo tardío.</p>",
+        "tag":"Domesticación y evolución de la papa",
+        "asset": {
+          "media":"imagenes/013-formativo-tardio.jpg",
+          "caption":"Formativo tardío"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"LA IMPORTANCIA DE LA PAPA EN LAS CULTURAS PRECOLOMBINAS",
+        "text":"<p>Las primeras sociedades agrícolas conocidas en la región del lago Titicaca surgieron tanto al norte como al sur del lago. Los agricultores más antiguos (alrededor del 1400 AC) fueron los Qaluyo en el norte, y los Tiwanaku y Chiripa en el sur. Para esta época las papas muy probablemente habían comenzado a difundirse a otras regiones de Sudamérica.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/014-culturas-precolombinas.jpg",
+          "caption":"Culturas precolombinas"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"",
+        "text":"<p>La papa fue esencial para el desarrollo de las culturas alto andinas donde el maíz (Zea mays) no se adaptaba con facilidad. Las papas conformaron la base de la seguridad alimentaria y permitieron a las culturas precolombinas, como Tiwanaku/Wari, expandirse y crear los primeros imperios en América del Sur.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/014-culturas-precolombinas.jpg",
+          "caption":"Culturas precolombinas"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"",
+        "text":"<p>La importancia de la papa quedó evidenciada tanto en las culturas de las sociedades andinas de las tierras altas como en las costeras, particularmente en sus cerámicas y rituales.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/014-culturas-precolombinas.jpg",
+          "caption":"Culturas precolombinas"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"",
+        "text":"<p>Muchas papas tienen un significado cultural. Esta papa llamada llunchuy qhachun waqachi en quechua (la papa que hace llorar a la nuera) es dada a la futura esposa para que la pele. Si logra pelarla perfectamente ¡Podrá casarse con el hombre elegido!</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/015-qhachun.jpg",
+          "caption":"Llunchuy qhachun waqachi"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"",
+        "text":"<p>Las papas que crecen a grandes altitudes son amargas porque contienen una toxina anticongelante. Prosiguiendo con un proceso secular desarrollado antes de los Incas, las papas son puestas a la intemperie para congelarse con las heladas nocturnas y después son tendidas en el suelo o en corrientes de agua. Al cabo de varias semanas, los agricultores escurren el líquido y remueven la cáscara pisando las papas. Finalmente, son colocadas al sol para que se sequen. El producto resultante, denominado chuño o tunta, puede ser almacenado indefinidamente y comercializado.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/016-moraya.jpg",
+          "caption":"Moraya"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"Sembrando papas",
+        "text":"<p>En el valle cusqueño de Urubamba, los agricultores de Pisac aún preparan sus campos de papas usando la ancestral chakitaklla. En setiembre, los agricultores, hombres y mujeres, celebran una costumbre de larga tradición denominada ayni o trabajo compartido. Primero, los hombres piden permiso a los espíritus de las montañas para comenzar a sembrar sus cultivos. Las papas son regadas con chicha y luego siembran una papa con una hoja de coca en una unión simbólica.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/017-siembra.jpg",
+          "caption":"Siembra"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"Nueva Crónica y Buen Gobierno",
+        "text":"<p>Estos dibujos pertenecen a \"Nueva Crónica y Buen Gobierno\", un recuento histórico de Felipe Huamán Poma de Ayala. Él fue un indígena peruano que, durante el Perú colonial, escribió una crónica ilustrada de los Incas que proporcionó detalles de la forma de vida de los habitantes indígenas. Algunas de las escenas aún pueden presenciarse hoy según se muestra aquí.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/018-guaman-poma.jpg",
+          "caption":"Dibujos de \"Nueva Crónica y Buen Gobierno\""
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"Las principales sociedades andinas precolombinas estuvieron basadas en la producción de papa.",
+        "text":"<p>Las papas son distribuidas en la sociedad costera precolombina de los Moche, en el norte del Perú, durante el período de Desarrollos Regionales.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/012-expansion.jpg",
+          "caption":"Expansión"
+        }
+      },
+      {  
+        "startDate":"100",
+        "endDate":"700",
+        "headline":"",
+        "text":"<p>A partir del año 250 AC muchas culturas precolombinas representaron papas en sus cerámicas, lo que demuestra la importancia del tubérculo para sus culturas.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/019-ceramicas.jpg",
+          "caption":"Cerámicas"
+        }
+      },
+      {  
+        "startDate":"400",
+        "endDate":"700",
+        "headline":"",
+        "text":"<p>En el periodo de Desarrollos Regionales, la cultura Tiwanaku se convierte en el primer sistema estatal plenamente integrado en la cuenca del Titicaca y en las regiones vecinasde Perú, Chile y Argentina.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/019-ceramicas.jpg",
+          "caption":"Cerámicas"
+        }
+      },
+      {  
+        "startDate":"700",
+        "endDate":"1100",
+        "headline":"",
+        "text":"<p>La cultura Tiwanaku se expande hacia el norte absorbiendo a la cultura Wari y más allá.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/019-ceramicas.jpg",
+          "caption":"Cerámicas"
+        }
+      },
+      {  
+        "startDate":"900",
+        "endDate":"1470",
+        "headline":"",
+        "text":"<p>Las papas son distribuidas en el reino costero precolombino Chimú, en el norte del Perú, durante el periodo de Estados Regionales.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/019-ceramicas.jpg",
+          "caption":"Cerámicas"
+        }
+      },
+      {  
+        "startDate":"1430",
+        "headline":"",
+        "text":"<p>Ascenso de la civilización incaica</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/020-atahuallpa.jpg",
+          "caption":"Atahuallpa"
+        }
+      },
+      {  
+        "startDate":"1430",
+        "headline":"",
+        "text":"<p>La cultura Inca no usó dinero. La comida era proporcionada por el trabajo y con el sistema de trueque, pero no había hambre gracias a la papa.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/020-atahuallpa.jpg",
+          "caption":"Atahuallpa"
+        }
+      },
+      {  
+        "startDate":"1500",
+        "headline":"",
+        "text":"<p>Las papas se cultivan intensamente en las regiones de El Carchi-Nariño, al norte de Ecuador y al sur de Colombia.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/012-expansion.jpg",
+          "caption":"Expansión"
+        }
+      },
+      {  
+        "startDate":"1532",
+        "headline":"",
+        "text":"<p>El imperio Inca crece abarcando desde el norte de Ecuador hasta el sur de Chile, poniendo énfasis en la intensificación de la producción de papa mediante prácticas mejoradas de ingeniería agrícola.</p>",
+        "tag":"La papa en las culturas precolombinas",
+        "asset": {
+          "media":"imagenes/012-expansion.jpg",
+          "caption":"Expansión"
+        }
+      },
+      {  
+        "startDate":"1532",
+        "headline":"El descubrimiento europeo",
+        "text":"<p>Comienza la conquista española de Sudamérica.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/021-descubrimiento.jpg",
+          "caption":"Descubrimiento"
+        }
+      },
+      {  
+        "startDate":"1532",
+        "headline":"",
+        "text":"<p>El primer registro histórico de la papa data de 1537, cuando Jiménez de Quesada encabezó una expedición española a la altiplanicie central de lo que hoy es Colombia. De esa y otras descripciones quedó en evidencia que la papa era cultivada extensamente en las tierras altas de Sudamérica y que las sociedades prehispánicas habían desarrollado variedades de papa extremadamente diversas que poseían cualidades culinarias únicas.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/022-quesada.jpg",
+          "caption":"Quesada"
+        }
+      },
+      {  
+        "startDate":"1532",
+        "headline":"",
+        "text":"<p>Felipe Huamán Poma de Ayala escribió un ilustrado recuento de la cultura Inca, que incluía las prácticas del cultivo de papa, la descripción de la herramienta andina para roturar el suelo (chaquitaklla), la siembra, el deshierbe y la cosecha de la papa. Las civilizaciones precolombinas habían desarrollado métodos para conservar las papas usando un procedimiento similar a la liofilización con el fin de preservar la seguridad alimentaria.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/022-quesada.jpg",
+          "caption":"Quesada"
+        }
+      },
+      {  
+        "startDate":"1535",
+        "headline":"",
+        "text":"<p>Fin aproximado del imperio Inca</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1537",
+        "headline":"",
+        "text":"<p>La cultura Muisca de Colombia ha desarrollado diversas variedades de papa.</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1537",
+        "headline":"",
+        "text":"<p>Primer registro histórico de la papa, en las tierras altas de Colombia, en el diario de viaje de Juan de Castellanos en la provincia de Vélez, Santander, Colombia.</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1537",
+        "headline":"",
+        "text":"<p>1. \"Las casas están bien abastecidas con maíz, frijoles y trufas (papas), unas raíces esféricas que al sembrarse producen un tallo...se producen juntas bajo la tierra y son más o menos del tamaño de un huevo\".<br/>Juan de Castellanos</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1537",
+        "headline":"",
+        "text":"<p>2. Otra descripción fue hecha por Pedro Cieza de León, un soldado del ejército de Sebastián de Benalcázar, durante la conquista del sur de Colombia y norte de Ecuador, alrededor de 1538: \"De las provisiones, además del maíz, hay otros dos productos que constituyen el principal alimento de estos indios. Uno es llamado \"papa\" y es una especie de nuez de la tierra que después de que se ha hervido asemeja una castaña cocida, pero que no tiene más piel que una trufa, y que crece bajo la tierra de la misma manera\".</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/023-cieza.jpg",
+          "caption":"Cieza"
+        }
+      },
+      {  
+        "startDate":"1552",
+        "headline":"",
+        "text":"<p>Se publica el primer recuento de la papa en el sur del Perú por López de Gómara en \"Historia General de las Indias\".</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1552",
+        "headline":"",
+        "text":"<p>A medida que los españoles se desplazaban hacia el sur iban registrando las culturas locales que usaban papas. 3. \"Los hombres que viven en [el sur de Perú] ... carecen de maíz y comen ciertas raíces similares a las trufas que ellos llaman papas\". \"La gente que ha vivido en El Collao (noroeste dellago Titicaca) durante cientos de años, no come maíz sino unas raíces redondeadas que llaman papas\".         </p><p>Francisco López de Gómara</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1553",
+        "headline":"",
+        "text":"<p>Francis Drake registra las papas que crecen en Chile.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/024-drake.jpg",
+          "caption":"Drake"
+        }
+      },
+      {  
+        "startDate":"1573",
+        "headline":"",
+        "text":"<p>Primer caso registrado de consumo de papas en Europa continental; se informó que habían sido compradas para los pacientes del Hospital de la Sangre en Sevilla, España.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/025-hospital.jpg",
+          "caption":"Hospital de la Sangre"
+        }
+      },
+      {  
+        "startDate":"1573",
+        "headline":"",
+        "text":"<p>Los pacientes del Hospital de la Sangre, ahora conocido como Hospital de las Cinco Llagas, en Sevilla, España, ya comían papas en 1573.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/025-hospital.jpg",
+          "caption":"Hospital de la Sangre"
+        }
+      },
+      {  
+        "startDate":"1573",
+        "headline":"La expansión de la papa en Europa",
+        "text":"<p></p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1573",
+        "headline":"",
+        "text":"<p>Aunque no existen registros escritos de la primera introducción de la papa a Europa, los indicios sugieren una temprana introducción en España alrededor de 1570. Después de ello, se extendió por Europa a través de tres rutas principales. La papa como \"objeto de curiosidad\" se difundió a través de una red de expertos y botánicos.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/026-fondo.jpg",
+          "caption":"Fondo"
+        }
+      },
+      {  
+        "startDate":"1573",
+        "headline":"",
+        "text":"<p> La papa como \"objeto de cultivo\" se esparció entre los monasterios de los frailes Carmelitas. La tercera ruta de difusión al interior de Europa fue por el continuo viaje de los protestantes, quienes llevaron consigo la papa cuando las persecuciones religiosas los obligaban a abandonar sus hogares y tierras. A fines de 1700, el cultivo de papa estaba generalizado en Europa.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/026-fondo.jpg",
+          "caption":"Fondo"
+        }
+      },
+      {  
+        "startDate":"1573",
+        "headline":"",
+        "text":"<p>A mediados de 1800 ocurrió la introducción de la devastadora enfermedad del tizón tardío causando la hambruna en Irlanda y otras regiones de Europa. No obstante, la papa ha seguido siendo un alimento de primera necesidad en toda Europa y actualmente los europeos ostentan la tasa más alta de consumo de papa per cápita de todo el mundo.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/026-fondo.jpg",
+          "caption":"Fondo"
+        }
+      },
+      {  
+        "startDate":"1587",
+        "headline":"",
+        "text":"<p>Philipe de Silvry, Prefecto de Mons, recibe dos tubérculos de papa y una baya o fruto de papa de un amigo de la legación del Papa en Bélgica.</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1589",
+        "headline":"",
+        "text":"<p>Charles d'Ecluse, o Clusius, recibe en Viena una acuarela a color de Philipe de Silvry hecha en 1588. Charles d'Ecluse fue un eminente experto europeo. La primera representación botánica exacta de una planta de papa fue recibida por Clusius en Viena. Indudablemente se trata de una variedad adaptada a días cortos de Solanum tuberosum subspecie andígena.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/027-clusius.jpg",
+          "caption":"Clusius"
+        }
+      },
+      {  
+        "startDate":"1590",
+        "headline":"",
+        "text":"<p>Primera introducción en Inglaterra, probablemente entre 1588 y 1593. Rompiendo un mito: Las papas no fueron introducidas a Inglaterra por sir Frances Drake desde Virginia, Estados Unidos.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/028-british.jpg",
+          "caption":"British"
+        }
+      },
+      {  
+        "startDate":"1597",
+        "headline":"",
+        "text":"<p>La primera ilustración impresa de una planta de papa fue publicada en \"Herball\" de John Gerard's en Inglaterra. El retrato de John Gerard en la carátula de la primera edición de su \"Herball\" de 1597, muestra al autor con una planta de papa en su mano.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/029-jhon.jpg",
+          "caption":"Jhon"
+        }
+      },
+      {  
+        "startDate":"1601",
+        "headline":"",
+        "text":"<p>Clusius publica su \"Rariorum Plantarum Historia\" en Amberes. En imagen una iIlustración de la papa publicada en \"Rariorum Plantarum Historia\" de Clusius en Viena en 1601. El dibujo hace una clara distinción entre las raíces y los tubérculos y muestra también un tubérculo dañado.</p>",
+        "tag":"El descubrimiento europeo",
+        "asset": {
+          "media":"imagenes/030-ilustracion-de-papa.jpg",
+          "caption":"ilustración de papa"
+        }
+      },
+      {  
+        "startDate":"1606",
+        "headline":"",
+        "text":"<p>Se documenta el cultivo de la papa en Irlanda.</p>",
+        "tag":"El descubrimiento europeo"
+      },
+      {  
+        "startDate":"1606",
+        "headline":"La expansión de la papa más allá de Europa",
+        "text":"<p>Hay dos líneas paralelas en la historia de la expansión de la papa. Al mismo tiempo que se popularizaba al interior de Europa, era llevada desde Europa hasta Norteamérica, África, Asia y el Pacífico principalmente por los misioneros, mercaderes y colonos europeos. Hoy en día, China e India son, respectivamente, el primer y el tercer país con la mayor producción de papa del mundo. África es el tercer continente de mayor producción de papa en tanto que en el África subsahariana la producción de papa se está extendiendo más rápidamente que ningún otro cultivo.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/031-expansion-mundial.jpg",
+          "caption":"Expansión mundial"
+        }
+      },
+      {  
+        "startDate":"1623",
+        "headline":"",
+        "text":"<p>Informes dan cuenta de sembríos de papa en Nueva Escocia, constituyendo el primer registro del cultivo de papa en Canadá.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/035-nueva-escocia.jpg",
+          "caption":"Nueva Escocia"
+        }
+      },
+      {  
+        "startDate":"1648",
+        "headline":"",
+        "text":"<p>Con el fin de la Guerra de los 30 Años, la libertad de culto en Europa permite la expansión del protestantismo y, con ello, de la papa.</p><p>Las papas se expandieron con el movimiento de la fe Protestante.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/032-cruzados.jpg",
+          "caption":"Cruzados"
+        }
+      },
+      {  
+        "startDate":"1655",
+        "headline":"",
+        "text":"<p>Primeros informes sobre cultivos de papas en la India.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/036-india.jpg",
+          "caption":"India"
+        }
+      },
+      {  
+        "startDate":"1680",
+        "headline":"",
+        "text":"<p>El rey Jan III Sobieski (1674-1696) siembra plantas de papas en los jardines del palacio Wilanów cerca de Varsovia, Polonia.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/033-rey-jan.jpg",
+          "caption":"Rey Jan"
+        }
+      },
+      {  
+        "startDate":"1753",
+        "headline":"",
+        "text":"<p>Linnaeus publica \"Species Plantarum\", que incluye la Solanum tuberosum esculenta. El botánico sueco Carl Linnaeus sentó las bases de la nomenclatura botánica moderna. La publicación de su \"Species Plantarum\" en 1753 fue el punto departida para el uso del sistema latino de dos palabras para nominar a las plantas.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/034-linnaeus.jpg",
+          "caption":"Linnaeus"
+        }
+      },
+      {  
+        "startDate":"1748",
+        "headline":"",
+        "text":"<p>El parlamento de Francia prohíbe el cultivo de la papa por la creencia de que causa lepra.</p>",
+        "tag":"La expansión de la papa más allá de Europa"
+      },
+      {  
+        "startDate":"1769",
+        "headline":"",
+        "text":"<p>Las papas son llevadas a Nueva Zelanda por los colonos ingleses.</p>",
+        "tag":"La expansión de la papa más allá de Europa"
+      },
+      {  
+        "startDate":"1773",
+        "headline":"",
+        "text":"<p>Parmentier, campeón de la popularización de la papa en Francia, con apoyo real. Parmentier con el rey Luis XVI, sosteniendo flores de papa, y María Antonieta en los jardines de Versalles donde Luis había sembrado papas.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/038-parmentier.jpg",
+          "caption":"Parmentier"
+        }
+      },
+      {  
+        "startDate":"1774",
+        "headline":"",
+        "text":"<p>Federico el Grande de Prusia ordena a su pueblo sembrar papas como protección contra el hambre. Durante la Guerra de la Papa (Kartoffelkrieg) las tropas prusianas y austriacas pasaron gran parte de su tiempo en maniobras en Bohemia para obtener alimentos o bloquear el acceso de suministros al enemigo.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/039-bohemia.jpg",
+          "caption":"Bohemia"
+        }
+      },
+      {  
+        "startDate":"1815",
+        "headline":"",
+        "text":"<p>Hacia el final de las guerras napoleónicas, en 1815, la papa se había convertido en un alimento básico en la dieta de la mayoría de europeos. Después de pasar un tiempo en Francia, Thomas Jefferson (en imagen) sirvió papas a sus invitados en la Casa Blanca.</p>",
+        "tag":"La expansión de la papa más allá de Europa",
+        "asset": {
+          "media":"imagenes/040-jefferson.jpg",
+          "caption":"Jefferson"
+        }
+      },
+      {  
+        "startDate":"1815",
+        "headline":"El tizón tardio de la papa",
+        "text":"<p> </p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/041-tizon.jpg",
+          "caption":"Tizón"
+        }
+      },
+      {  
+        "startDate":"1843",
+        "headline":"",
+        "text":"<p>Se reconoce por primera vez al tizón tardío en Estados Unidos.</p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/041-tizon.jpg",
+          "caption":"Tizón"
+        }
+      },
+      {  
+        "startDate":"1844",
+        "headline":"",
+        "text":"<p>El tizón tardío golpea Canadá y Estados Unidos.</p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/041-tizon.jpg",
+          "caption":"Tizón"
+        }
+      },
+      {  
+        "startDate":"1845",
+        "headline":"",
+        "text":"<p>El tizón tardío llegó a Europa desde los Estados Unidos vía Ostend en Bélgica y se expandió rápidamente. El 12 de setiembre de 1845 el tizón tardío es reportado por primera vez en Irlanda. El efecto del tizón duplicó los precios de la papa.</p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/042-herbario.jpg",
+          "caption":"Herbario"
+        }
+      },
+      {  
+        "startDate":"1846",
+        "headline":"",
+        "text":"<p>El tizón tardío destruyó casi la totalidad de la cosecha de papa en Irlanda; se extiende el hambre. Más de un millón de personas mueren de inanición y enfermedades en Irlanda y más de un millón emigran, principalmente a los Estados Unidos. En imagen, el buque de emigrantes Perú saliendo de Cork hacia Melbourne, Australia 1847. El impacto no fue tan severo en el resto de Europa debido a que contaban con otras fuentes alimenticias.</p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/043-llegada-tizon.jpg",
+          "caption":"La llegada del tizón"
+        }
+      },
+      {  
+        "startDate":"1850",
+        "headline":"",
+        "text":"<p>En Rusia, el zar Nicolás I ordena a su pueblo comenzar a sembrar papas, actualizando un edicto previo de Catalina la Grande.</p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/044-zar.jpg",
+          "caption":"Zar"
+        }
+      },
+      {  
+        "startDate":"1876",
+        "headline":"",
+        "text":"<p>Anton de Bary fue quien acuñó el nombre Phytophthora en 1876, al describir el hongo causante del tizón tardío.</p><p>Los hilos de Phytophthora infestas, el hongo del tizón tardío, producen esporangios característicos similares a un limón, que contienen las esporas.</p>",
+        "tag":"El tizón tardio de la papa",
+        "asset": {
+          "media":"imagenes/045-hongo.jpg",
+          "caption":"Hongo"
+        }
+      },
+      {  
+        "startDate":"1898",
+        "headline":"La edad moderna",
+        "text":"<p>Durante la fiebre del oro en Klondike, Alaska, las papas eran tan cotizadas por su contenido de vitamina C que los mineros las intercambiaban por oro.</p><p>En la imagen se aprecia el cuadro de Van Gogh \"Los comedores de papas\" (1885)</p>",
+        "tag":"La edad moderna",
+        "asset": {
+          "media":"imagenes/049-los-comedores-de-papas.jpg",
+          "caption":"Los comedores de papas"
+        }
+      },
+      {  
+        "startDate":"1900",
+        "headline":"",
+        "text":"<p>Las papas son cultivadas a lo largo y ancho de Europa como un alimento de primera necesidad.</p>",
+        "tag":"La edad moderna",
+        "asset": {
+          "media":"imagenes/046-europeos.jpg",
+          "caption":"Europeos"
+        }
+      },
+      {  
+        "startDate":"1900",
+        "headline":"",
+        "text":"<p>Densidad del cultivo de papa en Europa a inicios del siglo XX. Cada punto representa alrededor de 810 ha (2000 acres).</p>",
+        "tag":"La edad moderna",
+        "asset": {
+          "media":"imagenes/047-densidad-de-papas.jpg",
+          "caption":"Densidad de papas"
+        }
+      },
+      {  
+        "startDate":"1939",
+        "endDate":"1945",
+        "headline":"",
+        "text":"<p>La producción de papa se intensificó en Europa y Rusia para alimentar a la población durante los años de la Segunda Guerra Mundial.</p>",
+        "tag":"La edad moderna"
+      },
+      {  
+        "startDate":"1943",
+        "headline":"",
+        "text":"<p>La historieta \"Coma papas\", publicada en el Daily Express del Reino Unido el 18 de enero de 1943, promovía el consumo de papa por ser más económica que el trigo.</p>",
+        "tag":"La edad moderna",
+        "asset": {
+          "media":"imagenes/048-coma-papas.jpg",
+          "caption":"Coma papas"
+        }
+      },
+      {  
+        "startDate":"1943",
+        "headline":"El legado de los mejoradores originales",
+        "text":"<p>Tenemos una deuda de gratitud con los habitantes andinos que domesticaron y mejoraron inicialmente la papa. Actualmente, la papa es el tercer cultivo alimenticio más importante del mundo, después del arroz y el trigo. Las papas se siembran en más de 130 países y son consumidas por más de un billón de personas en todo el mundo.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/050-gratitud.jpg",
+          "caption":"Gratitud"
+        }
+      },
+      {  
+        "startDate":"1943",
+        "headline":"",
+        "text":"<p>En 2005, por primera vez el área sembrada con papas en los países desarrollados sobrepasó al de los países industrializados. El aumento de eventos climáticos severos, el incremento de los costos de los granos básicos y el creciente uso de productos alimenticios para biocombustibles, hacen prever que la producción de papa se volverá aún más importante como un cultivo de seguridad alimentaria para el mundo.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/050-gratitud.jpg",
+          "caption":"Gratitud"
+        }
+      },
+      {  
+        "startDate":"1943",
+        "headline":"",
+        "text":"<p>El Centro Internacional de la Papa (CIP) y nuestros colaboradores alrededor del planeta estamos trabajando para conservar la biodiversidad de la papa y encaminar la investigación con el fin de aprovechar la biodiversidad de la papa y desarrollar tecnologías de manejo para reducir el hambre y lapobreza en todo el mundo en desarrollo.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/050-gratitud.jpg",
+          "caption":"Gratitud"
+        }
+      },
+      {  
+        "startDate":"1971",
+        "headline":"",
+        "text":"<p>El Centro Internacional de la Papa - CIP se establece en Lima, Perú.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/051-logo-cip.jpg",
+          "caption":"Logo CIP"
+        }
+      },
+      {  
+        "startDate":"1990",
+        "headline":"",
+        "text":"<p>(Arriba) 471 años después que los europeos vieron los cultivos que crecían en Sudamérica, la papa es el cultivo más importante del mundo entre las raíces y tubérculos, sembrada en más de 130 países. (Abajo) Un buen cultivo de los campos de Tayikistán.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/052-expansion-mundial.jpg",
+          "caption":"Expansión'mundial"
+        }
+      },
+      {  
+        "startDate":"2001",
+        "headline":"",
+        "text":"<p>El CIP inaugura su nuevo Complejo de Biodiversidad, con más de 4,200 variedades de papa, basándose en las colecciones originales del científico peruano Dr. Carlos Ochoa. La colección del CIP es mantenida \"en custodia\" para la humanidad, bajo los auspicios de las Naciones Unidas.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/053-complejo-cip.jpg",
+          "caption":"Complejo CIP"
+        }
+      },
+      {  
+        "startDate":"2002",
+        "headline":"",
+        "text":"<p>Seis comunidades campesinas quechuas crean el Parque de la Papa en el Valle Sagrado de los Incas, departamento de Cusco, Perú, con el fin de manejar y proteger las 600 variedades de papas nativas que crecen en su ámbito. (Arriba) Los agricultores del Parque de la Papa clasifican los tubérculos de papa por sus formas y colores.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/054-parque-papa.jpg",
+          "caption":"Parque de la Papa"
+        }
+      },
+      {  
+        "startDate":"2005",
+        "headline":"",
+        "text":"<p>La papa es el tercer cultivo alimenticio más importante del mundo. El área sembrada con papa en los países en desarrollo por primera vez excedió a la de los países industrializados.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/055-consumo-mundial.jpg",
+          "caption":"Consumo mundial"
+        }
+      },
+      {  
+        "startDate":"2007",
+        "headline":"",
+        "text":"<p>El proyecto \"Tikapapa\" del CIP-PapaAndina, que promueve cadenas productivas de papas nativas e galardonado en el 2007 con el premio SEED Award de las Naciones Unidas (incentivo a empresarios para conservar el medio ambiente y promover el desarrollo) y el Premio al Desafío Mundial 2007 (World Challenge Award).</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/056-tika-papa.jpg",
+          "caption":"Tika papa"
+        }
+      },
+      {  
+        "startDate":"2008",
+        "headline":"",
+        "text":"<p>Con el propósito de remarcar la importancia de la papa, las Naciones Unidas declaran el 2008 como el Año Internacional de la Papa.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/057-dia-papa.jpg",
+          "caption":"Año Internacional de la Papa"
+          }
+      },
+      {  
+        "startDate":"2010",
+        "headline":"",
+        "text":"<p>Las papas nativas se desarrollan comercialmente generando ingresos para los pequeños productores. Promovidas por la gastronomía, las papas nativas acceden a mercados más exigentes. El valor de venta crece en 150% y el consumo por persona, de 65 a 85 kg.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/058-comercial.jpg",
+          "caption":"Comercial"
+        }
+      },
+      {  
+        "startDate":"2012",
+        "headline":"",
+        "text":"<p>La agricultura contribuye a la mejora de la nutrición. El aporte de las papas nativas, con alto potencial nutritivo, favorece a la seguridad alimentaria y nutricional de la población andina.</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/059-alimentacion.jpg",
+          "caption":"Alimentación"
+        }
+      },
+      {  
+        "startDate":"2013",
+        "headline":"",
+        "text":"<p>Se da inicio a una red de microcentros de alta diversidad de papas nativas para el monitoreo sistemático del estado de conservación de las variedades a lo largo del tiempo y en su ambiente natural (in-situ).</p>",
+        "tag":"El legado de los mejoradores originales",
+        "asset": {
+          "media":"imagenes/060-chirapaq.jpg",
+          "caption":"Chirapaq"
+        }
+      }
+    ]
+  }
+}
