@@ -195,7 +195,40 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       //.pipe($.if(watch, reload({stream: true})));
   });
 
-  gulp.task('images', ['content-images', 'assets-images']);
+  gulp.task('resize-images', ['content-images'], function () {
+    gulp.src(path.join(
+        rootDir,
+        paths.content.self,
+        'origen/historia/imagenes/**.jpg'
+      ))
+      .pipe($.cache($.gm(function (gmfile) {
+        return gmfile.resize(1280, null, '<');
+      })))
+      .pipe($.if(RELEASE, $.cache($.imagemin({
+        progressive: true,
+        interlaced: true
+      }))))
+      .pipe(gulp.dest(path.join(DEST,'origen/historia/imagenes/')));
+  });
+
+  gulp.task('thumb-images', function () {
+    console.log(path.join(DEST,'origen/historia/imagenes/'))
+    gulp.src(path.join(
+        rootDir,
+        paths.content.self,
+        'origen/historia/imagenes/**.jpg'
+      ))
+      .pipe($.cache($.gm(function (gmfile) {
+        return gmfile.thumb(40, 40);
+      })))
+      .pipe($.if(RELEASE, $.cache($.imagemin({
+        progressive: true,
+        interlaced: true
+      }))))
+      .pipe(gulp.dest(path.join(DEST,'origen/historia/imagenes/')));
+  });
+
+  gulp.task('images', ['assets-images', 'resize-images']);
 
   // Fonts
   gulp.task('fonts', function () {
@@ -528,7 +561,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
     gulp.watch(src.files, ['files']);
     gulp.watch(src.webroot, ['webroot']);
-    gulp.watch(src.images, ['images']);
+    //gulp.watch(src.images, ['images']);
     gulp.watch(src.pages, ['pages']);
     gulp.watch(src.styles, ['styles']);
     gulp.watch(src.scripts, ['scripts']);
