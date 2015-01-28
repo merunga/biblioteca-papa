@@ -2,7 +2,6 @@
 // = include ../../bower_components/jquery/dist/jquery.js
 // = include ../../bower_components/isotope/dist/isotope.pkgd.js
 // = include ../../bower_components/timeline.js/build/js/storyjs-embed.js
-// = include ../../bower_components/timeline.js/build/js/storyjs-embed.js
 // = include ../../bower_components/smartmenus/dist/jquery.smartmenus.js
 // = include ../../bower_components/smartmenus/dist/addons/bootstrap/jquery.smartmenus.bootstrap.js
 // = include ../../bower_components/unitegallery/package/unitegallery/js/unitegallery.js
