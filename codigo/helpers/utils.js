@@ -92,8 +92,8 @@ module.exports.eachInField = function(obj, field, options) {
   return ret;
 };
 
-module.exports.eachCollectFieldValue = function(obj, field, options) {
-  var values = _.uniq(_.collect(obj, function(it) { return it[field]; }));
+module.exports.eachCollectFieldValue = function(obj, mainField, field, options) {
+  var values = _.uniq(_.collect(obj[mainField], function(it) { return it[field]; }));
   var ret = "";
 
   for(var i=0, j=values.length; i<j; i++) {
@@ -112,6 +112,14 @@ module.exports.concat = function(a, b, c) {
   return a + b + c;
 };
 
+module.exports.concatFields = function(obj, fields, sep) {
+  var values = [];
+  _.each(fields, function(field) {
+    values.push(obj[field]);
+  });
+  return values.join(sep);
+};
+
 module.exports.strPad = function(str, size) {
   var s = String(str);
   while (s.length < (size || 2)) {s = "0" + s;}
@@ -120,6 +128,12 @@ module.exports.strPad = function(str, size) {
 
 module.exports.humanize = function(str) {
   return humanize(str);
+};
+
+module.exports.get = function(obj, field) {
+  if(obj) {
+    return obj[field];  
+  }
 };
 
 // module.exports.extend = function(one, other) {

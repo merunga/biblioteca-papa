@@ -1,6 +1,6 @@
 <script type="text/javascript">
   $(window).load(function(){
-    $container = $('#{{page.containerId}}');
+    $container = $('#{{page.isotope.containerId}}');
     $('.panel-collapse').on('shown.bs.collapse', function () {
       $container.isotope('layout')
     });
@@ -18,9 +18,9 @@
     };
     
     // init Isotope
-    var $container = $('#{{page.containerId}}').isotope({
+    var $container = $('#{{page.isotope.containerId}}').isotope({
       "columnWidth": 200,
-      "itemSelector": "{{page.itemSelector}}",
+      "itemSelector": "{{page.isotope.itemSelector}}",
       filter: filter
     });
 
@@ -37,7 +37,7 @@
     });
 
     {{#each page.filterBy}}
-      {{#eachCollectFieldValue ../page.variedades this}}
+      {{#eachCollectFieldValue ../page ../page.isotope.itemsField this}}
       $('{{slugifyEach this (concat "#filter-" ../this "-") }}').on('click',function() {
         $('#variedad-search').val('');
         $container.isotope({ filter: '.{{concat ../this "-" (slugify this)}}' });  

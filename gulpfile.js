@@ -16,7 +16,17 @@ var opt = {
     content: {
       self: 'contenido',
       files: '**/*.{pdf,zip,json,css,js}',
-      images: '**/*.{jpg,png,svg,gif}',
+      images: {
+        self: '**/*.{jpg,png,svg,gif}',
+        resize: [
+          'origen/historia/imagenes/**.jpg',
+          'cocina/galeria/fotos/**.jpg',
+        ],
+        thumb: {
+          'origen/historia/imagenes/**.jpg': [40, 40],
+          'cocina/galeria/fotos/**.jpg': [88, 55],
+        }
+      },
       pages: '**/*.{hbs,md}'
     },
     code: {
@@ -26,7 +36,12 @@ var opt = {
         self: 'assets',
         images: 'images',
         fonts: 'fonts',
-        vendor: 'vendor'
+        vendor: {
+          'bower_components/unitegallery/package/unitegallery': [
+            'skins/**/*',
+            'images/**/*'
+          ]
+        }
       },
       partials: 'partials/**/*.hbs',
       layouts: 'layouts',

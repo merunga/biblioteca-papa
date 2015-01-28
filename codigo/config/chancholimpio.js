@@ -24,7 +24,11 @@ var defaultPaths = {
   content: {
     self: 'content',
     files: 'files/**',
-    images: 'images/*.{jpg,png,svg,gif}',
+    images: {
+      self: '**/*.{jpg,png,svg,gif}',
+      resize: [],
+      thumb: {}
+    },
     pages: 'pages/**/*'
   },
   code: {
@@ -34,7 +38,7 @@ var defaultPaths = {
       self: 'assets',
       images: 'images',
       fonts: 'fonts',
-      vendor: 'vendor'
+      vendor: {}
     },
     partials: 'partials/**/*.hbs',
     layouts: 'layouts',
@@ -126,7 +130,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
   gulp.task('clean', del.bind(null, [DEST]));
 
   // 3rd party libraries
-  gulp.task('vendor', function () {
+  gulp.task('vendor', ['assets-vendor'], function () {
     gulp.src(path.join(
         rootDir,
         paths.code.self,
@@ -140,6 +144,29 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
         paths.code.assets.self,
         paths.code.scripts.self
       )));
+  });
+
+  gulp.task('assets-vendor', function () {
+    _.each(paths.code.assets.vendor, function(assetsSrc, vendorSrc) {
+      _.each(assetsSrc, function(assetSrc) {
+        var vaSrc = path.join(
+          rootDir,
+          vendorSrc,
+          assetSrc
+        );
+        
+        return gulp.src(vaSrc)
+          .pipe($.if(RELEASE, $.cache($.imagemin({
+            progressive: true,
+            interlaced: true
+          }))))
+          .pipe(gulp.dest(path.join(
+            DEST,
+            paths.code.assets.self,
+            assetSrc.replace('/**/*','')
+          )));
+      });
+    });
   });
 
   // Static files
@@ -184,7 +211,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
     src.images = path.join(
       rootDir,
       paths.content.self,
-      paths.content.images
+      paths.content.images.self
     );
     return gulp.src(src.images)
       .pipe($.if(RELEASE, $.cache($.imagemin({
@@ -196,39 +223,43 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
   });
 
   gulp.task('resize-images', ['thumb-images'], function () {
-    gulp.src(path.join(
-        rootDir,
-        paths.content.self,
-        'origen/historia/imagenes/**.jpg'
-      ))
-      .pipe($.cache($.gm(function (gmfile, done) {
-        return done(null, gmfile.resize(1280, null, '<'));
-      })))
-      .pipe($.if(RELEASE, $.cache($.imagemin({
-        progressive: true,
-        interlaced: true
-      }))))
-      .pipe(gulp.dest(path.join(DEST,'origen/historia/imagenes/')));
+    _.each(paths.content.images.resize, function(thePath) {
+      gulp.src(path.join(
+          rootDir,
+          paths.content.self,
+          thePath
+        ))
+        .pipe($.cache($.gm(function (gmfile, done) {
+          return done(null, gmfile.resize(1280, null, '<'));
+        })))
+        .pipe($.if(RELEASE, $.cache($.imagemin({
+          progressive: true,
+          interlaced: true
+        }))))
+        .pipe(gulp.dest(path.join(DEST, path.dirname(thePath))));
+    });
   });
 
   gulp.task('thumb-images', ['content-images'], function () {
-    gulp.src(path.join(
-        rootDir,
-        paths.content.self,
-        'origen/historia/imagenes/**.{png,jpg}'
-      ))
-      .pipe($.gm(function (gmfile, done) {
-        var destPath = gmfile.source.replace('.jpg','_thumb.jpg');
-        destPath = destPath.replace(path.join(rootDir,paths.content.self), DEST);
-        return done(null, gmfile.thumb(40, 40, destPath, 100, function() {
+    _.each(paths.content.images.thumb, function(dimensions, thePath) {
+      gulp.src(path.join(
+          rootDir,
+          paths.content.self,
+          thePath
+        ))
+        .pipe($.gm(function (gmfile, done) {
+          var destPath = gmfile.source.replace('.jpg','_thumb.jpg');
+          destPath = destPath.replace(path.join(rootDir,paths.content.self), DEST);
+          return done(null, gmfile.thumb(dimensions[0], dimensions[1], destPath, 0, function() {
 
-        }));
-      }))
-      .pipe($.if(RELEASE, $.cache($.imagemin({
-        progressive: true,
-        interlaced: true
-      }))))
-      .pipe(gulp.dest(path.join(DEST,'origen/historia/imagenes/')));
+          }));
+        }))
+        .pipe($.if(RELEASE, $.cache($.imagemin({
+          progressive: true,
+          interlaced: true
+        }))))
+        .pipe(gulp.dest(path.join(DEST, path.dirname(thePath))));
+    });
   });
 
   gulp.task('images', ['assets-images', 'resize-images']);

@@ -13,17 +13,17 @@ layout: default
     <input type="text" id="variedad-search" placeholder="Buscar" />
 
     <b>{{this}}</b>
-  {{#eachCollectFieldValue ../page.variedades this}}
-    <button id="{{slugifyEach this (concat "filter-" ../this "-") }}">
-      {{humanize this}}
-    </button>
-  {{/eachCollectFieldValue}}
+    {{#eachCollectFieldValue ../page ../page.isotope.itemsField this}}
+      <button id="{{slugifyEach this (concat "filter-" ../this "-") }}">
+        {{humanize this}}
+      </button>
+    {{/eachCollectFieldValue}}
   </div>
 {{/each}}
 
 <div class="row">
-  <div id="{{page.containerId}}">
-  {{#eachInField page page.itemsField}}
+  <div id="{{page.isotope.containerId}}">
+  {{#eachInField page page.isotope.itemsField}}
     {{> body}}
   {{/eachInField}}
   </div>

@@ -1,3 +1,15 @@
 ---
 layout: default
 ---
+
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div id="{{page.gallery.containerId}}" style="display:none;">
+      {{#eachInField page page.gallery.itemsField}}
+        <img alt="{{get this page.altField}}" src="{{thumb}}"
+          data-image="{{src}}"
+          data-description="{{concatFields this ../page.gallery.titleFields ' - '}}">
+      {{/eachInField}}
+    </div>
+  </div>
+</div>

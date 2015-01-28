@@ -15,12 +15,16 @@
     <script src="{{baseUrl '/assets/scripts/vendor.js'}}"></script>
     <script src="{{baseUrl '/assets/scripts/bundle.js'}}"></script>
 
-    {{#if page.containerId}}
+    {{#if page.isotope.containerId}}
       {{> isotope-scripts}}
     {{/if}}
 
     {{#if page.timeline}}
       {{> timeline-scripts}}
+    {{/if}}
+
+    {{#if page.gallery.containerId}}
+      {{> gallery-scripts}}
     {{/if}}
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/{{ pkgs.bootstrap }}/js/bootstrap.min.js"></script>
