@@ -18,7 +18,9 @@ var yaml = require('js-yaml');
 var fs   = require('fs');
 var fm = require('front-matter');
 var glob = require('glob');
+var glob2base = require('glob2base');
 var async = require('async');
+
 
 var defaultPaths = {
   content: {
@@ -163,7 +165,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           .pipe(gulp.dest(path.join(
             DEST,
             paths.code.assets.self,
-            assetSrc.replace('/**/*','')
+            glob2base(new glob.Glob(assetSrc))
           )));
       });
     });
@@ -222,35 +224,37 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       //.pipe($.if(watch, reload({stream: true})));
   });
 
-  gulp.task('resize-images', ['thumb-images'], function () {
-    _.each(paths.content.images.resize, function(thePath) {
+  gulp.task('resize-images', ['thumb-images'], function (gulpDone) {
+    async.each(paths.content.images.resize, function(thePath, srcDone) {
       gulp.src(path.join(
           rootDir,
           paths.content.self,
           thePath
         ))
-        .pipe($.cache($.gm(function (gmfile, done) {
-          return done(null, gmfile.resize(1280, null, '<'));
+        .pipe($.cache($.gm(function (gmfile, gmDone) {
+          gmDone(null, gmfile.resize(1280, null, '<'));
         })))
         .pipe($.if(RELEASE, $.cache($.imagemin({
           progressive: true,
           interlaced: true
         }))))
-        .pipe(gulp.dest(path.join(DEST, path.dirname(thePath))));
-    });
+        .pipe(gulp.dest(path.join(DEST, glob2base(new glob.Glob(thePath)))))
+        .on('end', srcDone);
+    }, gulpDone);
   });
 
-  gulp.task('thumb-images', ['content-images'], function () {
-    _.each(paths.content.images.thumb, function(dimensions, thePath) {
+  gulp.task('thumb-images', ['content-images'], function (gulpDone) {
+    async.each(_.keys(paths.content.images.thumb), function(thePath, srcDone) {
+      var dimensions = paths.content.images.thumb[thePath];
       gulp.src(path.join(
           rootDir,
           paths.content.self,
           thePath
         ))
-        .pipe($.gm(function (gmfile, done) {
+        .pipe($.gm(function (gmfile, gmDone) {
           var destPath = gmfile.source.replace('.jpg','_thumb.jpg');
-          destPath = destPath.replace(path.join(rootDir,paths.content.self), DEST);
-          return done(null, gmfile.thumb(dimensions[0], dimensions[1], destPath, 0, function() {
+          destPath = destPath.replace(path.join(rootDir, paths.content.self), DEST);
+          gmDone(null, gmfile.thumb(dimensions[0], dimensions[1], destPath, 0, function() {
 
           }));
         }))
@@ -258,8 +262,9 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           progressive: true,
           interlaced: true
         }))))
-        .pipe(gulp.dest(path.join(DEST, path.dirname(thePath))));
-    });
+        .pipe(gulp.dest(path.join(DEST, glob2base(new glob.Glob(thePath)))))
+        .on('end', srcDone);
+    }, gulpDone);
   });
 
   gulp.task('images', ['assets-images', 'resize-images']);
@@ -315,10 +320,6 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
           }
 
           var pageData = fm(data);
-
-          if(pageData.excludeFromMenu) {
-            return;
-          }
 
           var relPath = filePath.replace(path.join(rootDir, paths.content.self, '/'), '');
 
@@ -435,6 +436,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
               paths.content.self,
               paths.content.pages
             ).replace('**/*'), '');
+
             var buildPath = '';
             if ( /\//.test(replacedPath) ) {
               buildPath = replacedPath.substr(0, replacedPath.lastIndexOf('/'));
