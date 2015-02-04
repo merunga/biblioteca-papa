@@ -16,6 +16,17 @@
       <ul class="nav navbar-nav">
         {{> menu menu}}
       </ul>
+
+      <form action="{{baseUrl '/buscar.html'}}"
+          class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input id="search-query" type="text" class="form-control"
+            name="q" placeholder="Buscar" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+      </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

@@ -20,6 +20,7 @@ var fm = require('front-matter');
 var glob = require('glob');
 var glob2base = require('glob2base');
 var async = require('async');
+var LunrIndex = require('./lunr-index');
 
 
 var defaultPaths = {
@@ -133,19 +134,19 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
   // 3rd party libraries
   gulp.task('vendor', ['assets-vendor'], function () {
-    gulp.src(path.join(
-        rootDir,
-        paths.code.self,
-        paths.code.scripts.self,
-        paths.code.vendor.script
-      ))
-      .pipe($.include())
-      .pipe($.if(RELEASE, $.uglify()))
-      .pipe(gulp.dest(path.join(
-        DEST,
-        paths.code.assets.self,
-        paths.code.scripts.self
-      )));
+    // gulp.src(path.join(
+    //     rootDir,
+    //     paths.code.self,
+    //     paths.code.scripts.self,
+    //     paths.code.vendor.script
+    //   ))
+    //   .pipe($.include())
+    //   .pipe($.if(RELEASE, $.uglify()))
+    //   .pipe(gulp.dest(path.join(
+    //     DEST,
+    //     paths.code.assets.self,
+    //     paths.code.scripts.self
+    //   )));
   });
 
   gulp.task('assets-vendor', function () {
@@ -267,7 +268,7 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
     }, gulpDone);
   });
 
-  gulp.task('images', ['assets-images', 'resize-images']);
+  gulp.task('images', ['assets-images'/*, 'resize-images'*/]);
 
   // Fonts
   gulp.task('fonts', function () {
@@ -301,6 +302,70 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       .pipe($.replace('UA-XXXXX-X', GOOGLE_ANALYTICS_ID))
       .pipe(gulp.dest(DEST))
       .pipe($.if(watch, reload({stream: true})));
+  });
+
+  gulp.task('search-index', function () {
+    // gulp.src()
+
+    // .pipe(lunrIndex())
+    // .pipe(gulp.dest(path.join(DEST,'/search-index.json')));
+    var index = new LunrIndex(paths);
+
+    glob(path.join(
+          rootDir,
+          paths.content.self,
+          paths.content.pages
+        ), function(err, files) {
+      files.forEach(function(filePath) {
+        var replacedPath = filePath.replace(path.join(
+          paths.content.self,
+          paths.content.pages
+        ).replace('**/*'), '');
+
+        var buildPath = '';
+        if ( /\//.test(replacedPath) ) {
+          buildPath = replacedPath.substr(0, replacedPath.lastIndexOf('/'));
+          buildPath = buildPath.replace(rootDir,'');
+        }
+
+        var partialsPath = path.join(
+          rootDir,
+          paths.code.self,
+          paths.code.partials
+        );
+
+        var layoutDir = path.join(
+          rootDir,
+          paths.code.self,
+          paths.code.layouts
+        );
+
+        var assembleOpt = {
+          data: assembleData,
+          partials: partialsPath,
+          layoutext: '.hbs',
+          layoutdir: layoutDir,
+          helpers: [path.join(
+            rootDir,
+            paths.code.self,
+            paths.code.helpers
+          )]
+        };
+
+        var stream = gulp.src(filePath)
+          .pipe($.assemble( assembleOpt ))
+          .pipe(index.index(filePath))
+          .pipe(gulp.dest('./site/search_index.js'));
+
+        stream.on('error', function(err) {
+          console.log(err)
+        });
+        stream.on('end', function(err) {
+          fs.writeFileSync('./site/search-index.json', index.generateSearchIndex());
+          fs.writeFileSync('./site/search-data.json',  index.generateSearchData());
+        });
+      });
+    });
   });
 
   gulp.task('pages', function () {
@@ -546,11 +611,11 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
       paths.code.scripts.src
     )];
     return gulp.src(src.scripts)
-      .pipe($.if(!RELEASE, $.sourcemaps.init()))
+      //.pipe($.if(!RELEASE, $.sourcemaps.init()))
       .pipe($.concat(paths.code.scripts.bundle))
       .pipe($.include())
       .pipe($.if(RELEASE, $.uglify()))
-      .pipe($.if(!RELEASE, $.sourcemaps.write()))
+      //.pipe($.if(!RELEASE, $.sourcemaps.write()))
       .pipe(gulp.dest(path.join(
         DEST,
         paths.code.assets.self,
@@ -561,7 +626,11 @@ module.exports = function(gulp, opt, rootDir, argv, $) {
 
   // Build
   gulp.task('build', ['clean'], function (cb) {
-    runSequence(['files','images', 'vendor', 'webroot', 'fonts', 'pages', 'styles', 'scripts'], cb);
+    runSequence([
+      'files','images', 'vendor', 'webroot',
+      'fonts', 'pages', 'search-index',
+      'styles', 'scripts'
+    ], cb);
   });
 
   function serve() {

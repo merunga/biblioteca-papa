@@ -136,6 +136,10 @@ module.exports.get = function(obj, field) {
   }
 };
 
+module.exports.raw = function(options) {
+  return options.fn();
+};
+
 // module.exports.extend = function(one, other) {
 //   return _.extend({}, other, one);
 // };

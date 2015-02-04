@@ -9,6 +9,10 @@
     "isotope": "~2.1.0",
     "timeline.js": "~2.35.2",
     "unitegallery": "*",
-    "smartmenus": "~0.9.7"
+    "smartmenus": "~0.9.7",
+    "lunr.js": "~0.5.7",
+    "uri.js": "~1.14.1",
+    "mustache": "~1.0.0",
+    "date.format": "http://stevenlevithan.com/assets/misc/date.format.js"
   }
 }

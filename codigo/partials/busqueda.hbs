@@ -1,0 +1,16 @@
+<div id="search-results" style="display: none;">
+  <h3>Resultados</h3>
+
+  <ul class="entries">
+  </ul>
+</div>
+
+{{#raw}}
+<script id="search-results-template" type="text/mustache">
+\{{#entries}}
+  <li>
+    <a href="{{baseUrl ''}}\{{url}}">\{{title}}</a>
+  </li>
+\{{/entries}}
+</script>
+{{/raw}}

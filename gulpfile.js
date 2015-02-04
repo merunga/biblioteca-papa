@@ -53,7 +53,7 @@ var opt = {
       },
       scripts: {
         self: 'scripts',
-        src: '{plugins,main,*}.js',
+        src: '{vendor,plugins,main}.js',
         bundle: 'bundle.js'
       },
       vendor: {
